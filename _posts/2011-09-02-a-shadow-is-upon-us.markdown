@@ -55,7 +55,7 @@ context.beginPath();
 context.rect(200, 200, 100, 100);
 context.closePath();
 context.shadowColor = "rgba(0,0,0,1)";
-*context.fill();*
+context.fill();
 context.stroke();
 
 context.save();

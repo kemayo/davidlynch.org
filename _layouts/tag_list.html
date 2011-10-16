@@ -1,0 +1,10 @@
+---
+layout: default
+subtitle: "puts tags on things"
+---
+
+<ul>
+{% for tag in page.tags %}
+    <li><a href="{{ tag }}/">{{ tag }}</a></li>
+{% endfor %}
+</ul>
