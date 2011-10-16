@@ -1,0 +1,471 @@
+/*
+Theme Name:     DavidLynch
+Theme URI:      http://davidlynch.org/
+Description:    My theme
+Author:         David Lynch
+Author URI:     http://davidlynch.org/
+Template:       toolbox
+Version:        1
+*/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+}
+a, a:link {
+	color: #28425e;
+	/*font-weight:700;*/
+}
+a:hover, a:active {
+	color:#e15119;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: arial, helvetica, sans-serif;
+	font-weight:normal;
+	color:#28425e;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration:none;
+}
+p {
+	margin:1em 0;
+	line-height:1.4;
+}
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+nav {
+	display:block;
+	height:2em;
+}
+.nav-previous {
+	float:left;
+}
+.nav-next {
+	float:right;
+}
+
+/* Header! */
+
+#page {
+	position:relative;
+	padding:36px 0 0;
+}
+
+#branding {
+	text-align:center;
+	margin-bottom:2em;
+}
+#branding h1 {
+	font-size:2.7em;
+	font-weight:bold;
+	margin:1em 0 0;
+	text-align: center;
+}
+#branding h2 {
+	color:black;
+	font-weight:normal;
+}
+
+#access {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	background:#ebeef1;
+	border-top:6px solid #cbd3db;
+	height:30px;
+}
+.admin-bar #access {
+	/*top:28px;*/
+}
+#access h1 { display:none; }
+#access .menu ul {
+	margin:0;
+	padding:0.6em 0;
+	font-size:0.8em;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	list-style:none;
+	text-align:center;
+}
+#access .menu li {
+	display:inline-block;
+	margin:0 1ex;
+	vertical-align:top;
+}
+#access .menu li.current_page_item a {
+	font-weight:bold;
+}
+#access .menu li a {
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#access .menu li > ul {
+	display:none;
+}
+#access .menu li:hover > ul {
+	display:block;
+}
+
+#main {
+	margin:0 auto;
+	max-width:720px;
+	padding:0 20px;
+}
+
+/* Entry! */
+
+.post {
+	margin:0 0 3em;
+}
+
+.entry-meta {
+	font-size:0.9em;
+}
+.entry-header .entry-meta {
+	text-indent:2em;
+}
+.entry-meta a {
+	color:#637893;
+	text-decoration:none;
+}
+.entry-header .entry-meta .sep, header .entry-meta .byline {
+	display:none;
+}
+
+.entry-content {
+	margin:0.8em 0;
+}
+
+.post footer {
+	border-top:1px solid #ebeef1;
+	padding-top:2px;
+}
+
+/* A few things common to comments and widgets */
+
+#comments h2, #comments h3, .widget-area h1 {
+	margin: 1em 0 0;
+	color:black;
+	border-bottom:2px solid #637B93;
+	line-height:133%;
+	font-size:1.3em;
+	font-weight:bold;
+}
+.commentlist li, .widget-area li {
+	background:#ebeef1;
+	color:#28425e;
+	margin:0.5em 0;
+}
+.commentlist li.bypostauthor {
+	background:#cbd3db;
+}
+
+/* Comments! */
+
+article.comment {
+	display: block;
+}
+.commentlist {
+	margin-left:2em;
+}
+.commentlist li {
+	padding:1em 1em 2em;
+	position:relative;
+}
+.comment .comment-author cite {
+	font-weight:bold;
+}
+.comment .comment-author .avatar {
+	position:absolute;
+	top:0;
+	right:0;
+	border:4px solid white;
+	background:white;
+	border-bottom-left-radius:4px;
+}
+.comment .comment-meta {
+	position:absolute;
+	bottom:0.5em;
+	right:1em
+}
+.comment .comment-meta a {
+	text-decoration:none;
+}
+.comment .reply {
+	position:absolute;
+	bottom:0.5em;
+	left:1em;
+}
+.comment .comment-content {
+	padding:1em 0 0.5em;
+}
+
+/* Class for labelling required form items */
+.required {
+	color: #cc0033;
+}
+
+/* Comment form! */
+
+#respond {
+	margin-bottom: 60px;
+}
+#respond input[type="text"],
+#respond textarea {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #fff;
+	border: 4px solid #eee;
+	-webkit-box-shadow: inset 0 1px 3px #ccc;
+	-moz-box-shadow: inset 0 1px 3px #ccc;
+	box-shadow: inset 0 1px 3px #ccc;
+	padding: 10px;
+	vertical-align:middle;
+	width: 200px;
+}
+#respond textarea {
+	width:auto;
+}
+#respond p {
+	position: relative;
+	margin: 10px 0;
+}
+#respond label {
+	display: inline-block;
+	padding: 4px 10px;
+	color: #555;
+	width: auto;
+	font-size: 13px;
+	width: 60px;
+	text-align:right;
+	vertical-align:baseline;
+}
+#respond .comment-form-url label,
+#respond .comment-form-comment label {
+	margin-right:6px;
+}
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+	position: absolute;
+	top: 18px;
+	left: 320px;
+	z-index: 1;
+	font-size: 16px;
+	font-weight: bold;
+}
+#respond .comment-notes,
+#respond .logged-in-as {
+	font-size: 13px;
+}
+#respond .logged-in-as a {
+	color: #478fa2;
+	font-weight: bold;
+	text-decoration: none;
+}
+#respond .form-allowed-tags {
+	padding-left:90px;
+}
+#respond input#submit {
+	color: #eee;
+	border: none;
+	font-size: 15px;
+	margin: 10px 90px;
+	-webkit-box-shadow: 1px 1px 3px #444;
+	-moz-box-shadow: 1px 1px 3px #444;
+	box-shadow: 1px 1px 3px #444;
+	cursor: pointer;
+	background: #68aa11;
+	padding: 5px 12px;
+	border-radius: 5px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+	border: 1px solid #93c514;
+	-webkit-font-smoothing: antialiased;
+}
+#respond input#submit:active {
+	background: #222;
+	color: #eee;
+	text-shadow: 0 -1px 0 #000;
+	border-color: #111;
+}
+#respond #cancel-comment-reply-link {
+	color: #666;
+	margin-left: 10px;
+	text-decoration: none;
+}
+#respond .logged-in-as a:hover,
+#respond #cancel-comment-reply-link:hover {
+	text-decoration: underline;
+}
+
+/* Widgets! */
+
+.widget-area {
+	width:45%;
+	margin-bottom:1em;
+}
+#secondary.widget-area {
+	float:left;
+}
+#tertiary.widget-area {
+	float:right;
+}
+.widget-area h1 {
+	font-size:1em;
+}
+.widget-area ul {
+	list-style:none;
+}
+.widget-area li {
+	font-size:1em;
+	padding:0.5em;
+}
+
+.widget-area .widget_search form {
+	margin:0.5em 0;
+	padding:0.5em;
+}
+.widget-area .widget_search form input#s {
+	width:60%;
+}
+
+#colophon {
+	clear:both;
+	display:none;
+}
+
+
+
+/* A few things from toolbox's CSS that help with in-post alignments */
+
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+	float: left;
+}
+.image-attachment nav {
+	float: right;
+	margin: 0 0 1em 0;
+}
+.image-attachment .entry-content {
+	clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+	background: #eee;
+	margin: 0 0 1em;
+	padding: 1em;
+	text-align: center;
+}
+.image-attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Aside Posts */
+.format-aside .entry-header {
+	display: none;
+}
+.single .format-aside .entry-header {
+	display: block;
+}
+.format-aside .entry-content,
+.format-aside .entry-summary {
+	padding-top: 1em;
+}
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+	padding-top: 0;
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+/* Image Posts */
+.format-image .entry-header {
+	display: none;
+}
+.single .format-image .entry-header {
+	display: block;
+}
+.format-image .entry-content,
+.format-image .entry-summary {
+	padding-top: 1em;
+}
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+	padding-top: 0;
+}
+
+/* Images */
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+	margin-right: 1em;
+}
+img.alignright {
+	margin-left: 1em;
+}
+.wp-caption {
+	padding: .5em;
+	text-align: center;
+}
+.wp-caption img {
+	margin: .25em;
+}
+.wp-caption .wp-caption-text {
+	margin: .5em;
+}
+.gallery-caption {
+
+}
+.wp-smiley {
+	margin: 0;
+}

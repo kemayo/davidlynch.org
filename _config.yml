@@ -1,0 +1,13 @@
+url: "http://davidlynch.org"
+pygments: true
+permalink: /blog/:year/:month/:day/:title/
+markdown: rdiscount
+
+exclude: ["Rakefile", ".gitignore"]
+
+paginate: 10
+pagination_roots: ["/blog"]
+
+subtitle: "is not a director"
+
+tag_dir: "blog/tag"

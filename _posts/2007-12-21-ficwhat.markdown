@@ -1,0 +1,23 @@
+--- 
+layout: post
+title: FicWhat?
+excerpt: ""
+wordpress_id: 11
+wordpress_url: http://davidlynch.org/blog/2007/12/ficwhat/
+date: 2007-12-21 16:11:38 -06:00
+tags: 
+- programming
+---
+As an amusing personal idiosyncrasy I run a fiction archive called <a href="http://www.ficwad.com">FicWad</a>.  (I believe much Katamari Damacy had been played just before the name was chosen.)
+
+I call this idiosyncratic because I don't use it myself.  I'm not, generally speaking, a fanfic-reading sort of person.  I run it because my wife wanted to start a fiction archive, and I was dragged in to provide the technical side of it.  She's since drifted away, leaving me to play as tinpot dictator over the writing masses.  (I am a very laissez-faire dictator, so this works pretty well for them.)
+
+I treat it as a coding hobby project.  It doesn't actually make any noticeable money from the ads, so I don't feel compelled to put effort in apart from when I feel interested.
+
+I've come to the conclusion that this sort of hobby project is a really good thing to have.  When you're writing something that thousands of people use, they'll scream at you if it doesn't work.  It provides incentive to work out how to do things <em>right</em>.
+
+In particular, it provides incentive to work out how to do things <em>yourself</em>.  A solo project like this doesn't let you get away with passing the buck to someone else on your team who's done something like this before.  If it turns out that you need to optimize your SQL, or use caching, or write a prioritized mailing queue, or whatever, you have to learn about the problem area.
+
+Yes, you'll write some awful code.  In fact, I had to rewrite the whole site from scratch earlier this year because back when I first wrote it I really didn't understand SQL performance, and I had to choose between throwing money at it (better server, etc.) or fixing the real problem.
+
+But I know I'm a better programmer for having it around.  It forces me to confront issues outside of my comfort zone, and that can only be a good thing.

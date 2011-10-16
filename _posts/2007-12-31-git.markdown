@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: git
+excerpt: ""
+wordpress_id: 12
+wordpress_url: http://davidlynch.org/blog/2007/12/git/
+date: 2007-12-31 15:36:54 -06:00
+tags: 
+- programming
+- version-control
+- git
+---
+I just watched <a href="http://www.youtube.com/watch?v=4XpnKHJAok8">Linus Torvalds talking about git</a>, the distributed version control system he wrote.
+
+What struck me here is that several times in this talk he was asked by Google employees variations on the theme of "why should *we* use git?", and he didn't have a compelling answer.  His statements boiled down to "we have an alternative way of visualizing branches, and subtly different workflows".
+
+Many of his "git is awesome" points were rooted in specific objections to CVS.  In particular, the complaints about branching and merging, and finding changes to a particular subset of a repository.  I'm not saying git isn't good at these things, I just think he should be comparing to SVN, which enables less cheap shots.
+
+None of this is to imply that I don't like git.  I've been playing with it recently, and it seems impressive.  I can't say that its distributed nature feels very essential to me -- but then, I'm not a member of a massive pseudo-anarchistic project like the Linux kernel.  I suspect that until you hit some critical mass of independent developers on a project, git and SVN are fundamentally interchangeable.
+
+The things that have actually made me go "ooh" about git thus far are offline commits, and content-tracking across files.

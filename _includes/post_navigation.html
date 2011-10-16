@@ -1,0 +1,11 @@
+{% if page.previous.url or page.next.url %}
+<nav>
+    <h1 class="assistive-text section-heading">Post navigation</h1>
+    {% if page.previous.url %}
+    <div class="nav-previous"><a href="{{ page.previous.url }}" rel="prev"><span class="meta-nav">&larr;</span> {{ page.previous.title }}</a></div>
+    {% endif %}
+    {% if page.next.url %}
+    <div class="nav-next"><a href="{{ page.next.url }}" rel="next">{{ page.next.title }} <span class="meta-nav">&rarr;</span></a></div>
+    {% endif %}
+</nav>
+{% endif %}

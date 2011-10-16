@@ -1,0 +1,27 @@
+--- 
+layout: post
+title: Maphilight 1.3
+excerpt: ""
+wordpress_id: 112
+wordpress_url: http://davidlynch.org/blog/?p=112
+date: 2011-05-04 21:08:41 -05:00
+tags: 
+- programming
+- javascript
+- jquery
+- canvas
+- maphilight
+---
+I released <a href="http://plugins.jquery.com/content/maphilight-13">maphilight 1.3</a> just now. (Though really I consider <a href="https://github.com/kemayo/maphilight">github</a> the more authoritative source.)
+
+So, IE9 broke maphilight because it was finally exposing the has_canvas codepath to IE. Turns out all the canvas stuff worked beautifully, but one call to setTimeout was relying on a non-IE feature. So that's fixed!
+
+Also changed since the 1.2 release (one year ago, gosh):
+
+<ul><li>New option groupBy lets you bundle several areas together</li>
+<li>New option wrapClass lets you set a classname for the wrapper div created to hold the canvas elements used by maphilight. If it's set to `true` it'll use the classname from the image.</li>
+<li>.data('maphilight') is checked for areas, as well as the metadata plugin. With jQuery > 1.4.3 this means that you can use JSON in an HTML5 data- attribute to pass this in. See <a href="http://api.jquery.com/data/">the API docs</a> for details.</li>
+<li>Performance on image maps containing a lot of areas was terrible because I <a href="https://github.com/kemayo/maphilight/commit/acb9d4b1df8a75da221982f86c34193a5470b6b8">was stupid about where I triggered an event</a>.</li>
+<li>Opera compatibility was harmed by <a href="http://bugs.jquery.com/ticket/6708">jQuery bug #6708</a> (fixed in 1.6), so work around that.</li></ul>
+
+Feel free to submit issues / pull requests on <a href="https://github.com/kemayo/maphilight">the github project</a>.

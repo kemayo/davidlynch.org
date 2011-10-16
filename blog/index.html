@@ -1,0 +1,18 @@
+---
+layout: default
+subtitle: "has a blog"
+---
+
+<div id="primary">
+<div id="content" role="main">
+
+{% include page_navigation.html %}
+
+{% for post in paginator.posts %}
+{% include post.html %}
+{% endfor %}
+
+{% include page_navigation.html %}
+
+</div><!-- content -->
+</div><!-- primary -->
