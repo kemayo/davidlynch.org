@@ -1,6 +1,5 @@
-.highlight, code { background: #181818; color: #F8F8F8; font-family: Consolas, Monaco,"Lucida Console"; }
-.highlight { padding: 16px; }
-.highlight * { font-family: Consolas, Monaco,"Lucida Console"; }
+.highlight, .highlight *, code { font-family: Consolas, Monaco,"Lucida Console"; }
+.highlight { background: #181818; color: #F8F8F8; padding: 16px; }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #5F5A60; font-style: italic } /* Comment */
 .highlight .err { border:#B22518; } /* Error */
