@@ -1,0 +1,3 @@
+[submodule "projects/maphilight"]
+	path = projects/maphilight
+	url = git://github.com/kemayo/maphilight.git
