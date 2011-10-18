@@ -5,3 +5,4 @@ Redirect permanent /misc http://random.davidlynch.org
 Redirect permanent /pictures http://random.davidlynch.org/pictures
 Redirect permanent /id http://openid.davidlynch.org
 Redirect permanent /js/maphilight http://davidlynch.org/projects/maphighlight
+Redirect permanent /resume.php http://davidlynch.org/resume.html

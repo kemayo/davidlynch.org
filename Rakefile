@@ -7,6 +7,7 @@ end
 
 desc 'Build site with Jekyll'
 task :build => :clean do
+  submodule('update')
   jekyll('--lsi')
 end
 
@@ -32,4 +33,8 @@ end
 
 def jekyll(opts = '')
   sh 'jekyll ' + opts
+end
+
+def submodule(opts = '')
+  sh 'git submodule ' + opts
 end
