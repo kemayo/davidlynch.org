@@ -3,7 +3,7 @@ pygments: true
 permalink: /blog/:year/:month/:day/:title/
 markdown: rdiscount
 
-exclude: ["Rakefile", ".gitignore"]
+exclude: ["Rakefile", "Readme.markdown"]
 
 paginate: 10
 pagination_roots: ["/blog"]

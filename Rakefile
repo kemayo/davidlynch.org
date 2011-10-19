@@ -5,26 +5,35 @@ task :clean do
   cleanup
 end
 
+desc 'Test site output for Liquid template errors'
+task :test => :build do
+  errors = `grep --exclude Rakefile -R 'Liquid error:' _site`
+  if errors.nil? || errors.empty?
+    puts "No errors"
+  else
+    puts "Errors:"
+    puts errors.inspect
+    exit 1
+  end
+end
+
 desc 'Build site with Jekyll'
 task :build => :clean do
   submodule('update')
   jekyll('--lsi')
 end
 
-desc 'Auto-rebuild the site, no server'
-task :auto => :clean do
-  jekyll('--no-server --auto')
-end
-
 desc 'Start server with --auto'
 task :server => :clean do
-  # compass
   jekyll('--server --auto')
 end
 
 desc 'Build and deploy'
 task :deploy => :build do
-  sh 'rsync -rtzh --progress --delete _site/ username@servername:/var/www/websitename/'
+  user = 'davidlynch'
+  host = 'davidlynch.org'
+  directory = '~/davidlynch.org'
+  sh 'rsync -rtzh --progress --delete _site/ #{user}@#{host}:#{directory}'
 end
 
 def cleanup
