@@ -11,12 +11,12 @@ tags:
 - linux
 - switch
 ---
-I've been running <a href="http://ubuntu.com">Ubuntu</a> on my home computer for a week and a half now.  That's right, I've <a href="http://diveintomark.org/archives/2008/01/17/of-canaries-and-coal-mines">joined the "A-list blogger circle-jerk"</a>.  For certain values of "A".  Specifically, the value "F".
+I've been running [Ubuntu](http://ubuntu.com) on my home computer for a week and a half now. That's right, I've [joined the "A-list blogger circle-jerk"](http://diveintomark.org/archives/2008/01/17/of-canaries-and-coal-mines). For certain values of "A". Specifically, the value "F".
 
-I've mostly found alternatives for all the programs I used.  The only area where I'm not quite satisfied is a music player; I used <a href="http://foobar2000.org/">foobar2000</a> on Windows, and I haven't found one to match it yet.  (I've settled on <a href="http://www.sacredchao.net/quodlibet">Quod Libet</a> at the moment, though its UI is a bit lacking.)
+I've mostly found alternatives for all the programs I used. The only area where I'm not quite satisfied is a music player; I used [foobar2000](http://foobar2000.org/) on Windows, and I haven't found one to match it yet. (I've settled on [Quod Libet](http://www.sacredchao.net/quodlibet) at the moment, though its UI is a bit lacking.)
 
-<a href="http://wowwiki.com/Linux/Wine">WoW works</a>, but I seem to be paying a ~10fps tax for running it under Wine.  It's a pain, but it's still playable.
+[WoW works](http://wowwiki.com/Linux/Wine), but I seem to be paying a ~10fps tax for running it under Wine. It's a pain, but it's still playable.
 
-I still have XP on a partition, but I haven't yet run into anything I need to boot into it for.  This is a promising development.
+I still have XP on a partition, but I haven't yet run into anything I need to boot into it for. This is a promising development.
 
-I'm looking forward to Hardy Heron's release.  It'll come with the newer nvidia drivers, which <a href="http://ventnorsblog.blogspot.com/2008/03/magic-169.html">apparently</a> <a href="http://www.phoronix.com/scan.php?page=article&item=934&num=1">improve performance</a>.  This will be appreciated, as I've been unimpressed by canvas in Linux-Firefox so far.
+I'm looking forward to Hardy Heron's release. It'll come with the newer nvidia drivers, which [apparently](http://ventnorsblog.blogspot.com/2008/03/magic-169.html) [improve performance](http://www.phoronix.com/scan.php?page=article&item=934&num=1). This will be appreciated, as I've been unimpressed by canvas in Linux-Firefox so far.

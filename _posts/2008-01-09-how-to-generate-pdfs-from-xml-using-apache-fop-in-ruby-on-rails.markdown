@@ -10,18 +10,19 @@ tags:
 - ruby
 - rails
 ---
-The title is a bit of a mouthful.  Sorry.
+The title is a bit of a mouthful. Sorry.
 
-Before we begin, I present the caveat that this code should <strong>not</strong> be used on a production system.  It launches a java runtime for every single request, which would cripple you.  This would need (a) output caching, and (b) some sort of persistent <a href="http://xmlgraphics.apache.org/fop/">FOP</a> server process before it could be considered usable.
+Before we begin, I present the caveat that this code should **not** be used on a production system. It launches a java runtime for every single request, which would cripple you. This would need (a) output caching, and (b) some sort of persistent [FOP](http://xmlgraphics.apache.org/fop/) server process before it could be considered usable.
 
 But if you just need to generate PDFs on an intranet app, say, then this could be handy.
 
-Step 1: Put FOP somewhere it can be found.  Specifically, its "build" and "lib" folders.  I created a "fop" directory in my project, and stuck everything in there.  (I don't promise that this is ideologically sound -- I'm new to the whole Rails thing.)
+Step 1: Put FOP somewhere it can be found. Specifically, its "build" and "lib" folders. I created a "fop" directory in my project, and stuck everything in there. (I don't promise that this is ideologically sound -- I'm new to the whole Rails thing.)
 
-Step 2: Add <code>Mime::Type.register "application/pdf", :pdf</code> to <code>config/initializers/mime_types.rb</code> (this gleaned from <a href="http://nubyonrails.com/articles/2006/12/18/dynamic-graphics-with-rails-1-2">Dynamic Graphics with Rails 1.2</a>).
+Step 2: Add `Mime::Type.register "application/pdf", :pdf` to `config/initializers/mime_types.rb` (this gleaned from [Dynamic Graphics with Rails 1.2](http://nubyonrails.com/articles/2006/12/18/dynamic-graphics-with-rails-1-2)).
 
 Step 3: Use a controller action something like this:
-<pre class="prettyprint"><code># GET /documents/1
+{% highlight ruby %}
+# GET /documents/1
 # GET /documents/1.xml
 # GET /documents/1.pdf
 def show
@@ -48,10 +49,11 @@ def show
       end
     end
   end
-end</code></pre>
+end
+{% endhighlight %}
 
-Then whenever someone asks for "documents/17.pdf" it'll make a PDF and serve it right on up.  In the event that something goes wrong it'll just display the command it ran, for some rough-and-ready debugging.
+Then whenever someone asks for "documents/17.pdf" it'll make a PDF and serve it right on up. In the event that something goes wrong it'll just display the command it ran, for some rough-and-ready debugging.
 
-For a proof-of-concept you could try this with the example XML and XSLT that comes with FOP.  Look for "projectteam2fo.xsl" in the examples directory.
+For a proof-of-concept you could try this with the example XML and XSLT that comes with FOP. Look for "projectteam2fo.xsl" in the examples directory.
 
 As I said above, this works, but should not be put anywhere near a publicly accessible site.

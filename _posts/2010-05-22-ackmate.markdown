@@ -11,6 +11,6 @@ tags:
 - ack
 - ackmate
 ---
-In the event that anyone was using my TextMate <a href="http://davidlynch.org/blog/2009/02/textmate-bundle-ack-in-project-improved/">Ack In Project fork</a>, protocool released a successor to Ack In Project called <a href="http://github.com/protocool/AckMate">AckMate</a>.
+In the event that anyone was using my TextMate [Ack In Project fork](http://davidlynch.org/blog/2009/02/textmate-bundle-ack-in-project-improved/), protocool released a successor to Ack In Project called [AckMate](http://github.com/protocool/AckMate).
 
 It's better. Get it instead.

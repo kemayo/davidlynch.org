@@ -9,8 +9,8 @@ tags:
 - programming
 - wordpress
 ---
-<a href="http://www.wordpress.org">WordPress</a>'s API documentation is weirdly incomplete.
+[WordPress](http://www.wordpress.org)'s API documentation is weirdly incomplete.
 
-The <a href="http://codex.wordpress.org/Developer_Documentation">official function reference</a>, for instance, was last updated for WordPress 2.1, and we're now on 2.5.
+The [official function reference](http://codex.wordpress.org/Developer_Documentation), for instance, was last updated for WordPress 2.1, and we're now on 2.5.
 
 This is making updating that widget I wrote be more of a hassle than I expected.

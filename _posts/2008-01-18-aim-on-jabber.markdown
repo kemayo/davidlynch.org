@@ -10,6 +10,6 @@ tags:
 - aim
 - jabber
 ---
-AOL appears to be <a href="http://wiki.jabber.org/index.php/AOL_Alpha">considering rolling out jabber access to AIM</a>.
+AOL appears to be [considering rolling out jabber access to AIM](http://wiki.jabber.org/index.php/AOL_Alpha).
 
 That would be pretty awesome.

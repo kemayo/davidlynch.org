@@ -11,8 +11,8 @@ tags:
 - maphilight
 - money
 ---
-<a href="http://www.clickablemaps.com/">"Clickable Maps"</a> is selling pre-made maps explicitly for use with Maphilight.
+["Clickable Maps"](http://www.clickablemaps.com/) is selling pre-made maps explicitly for use with Maphilight.
 
-The pre-purchase samples are pretty good examples of what's possible. This <a href="http://www.clickablemaps.com/clickable-map-of-the-united-states-small/">USA map</a> shows remote triggering of a hilight, for instance.
+The pre-purchase samples are pretty good examples of what's possible. This [USA map](http://www.clickablemaps.com/clickable-map-of-the-united-states-small/) shows remote triggering of a hilight, for instance.
 
 Note: I wouldn't have released under the MIT license if this sort of thing bothered me.

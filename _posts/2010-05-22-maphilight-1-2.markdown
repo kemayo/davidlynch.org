@@ -10,16 +10,17 @@ tags:
 - jquery
 - maphilight
 ---
-I finally got around to <a href="http://plugins.jquery.com/node/1837/release">officially releasing maphilight 1.2</a>.
+I finally got around to [officially releasing maphilight 1.2](http://plugins.jquery.com/node/1837/release).
 
-This mostly just updates the official jquery.com release to the HEAD of <a href="http://github.com/kemayo/maphilight/">the github project</a>.
+This mostly just updates the official jquery.com release to the HEAD of [the github project](http://github.com/kemayo/maphilight/).
 
 I'd been putting it off because I spent quite a while without easy access to a Windows machine with IE8 to test the fixes that people provided. But I switched back to Windows as my main desktop recently (mainly to play games), so that was resolved.
 
 There's not much in the way of changes:
-<ul><li>IE8 works now</li>
-<li>New "neverOn" option for use with metadata by Zach Dennis, which stops individual areas from ever being hilighted</li>
-<li>Handles being called on the same area twice differently; now rebuilds the hilighted regions</li>
-<li>...and I added <a href="http://davidlynch.org/js/maphilight/docs/demo_simple.html">an example</a> of triggering the hilight from another element, since it's one of the most commonly asked questions</li></ul>
+
+* IE8 works now
+* New "neverOn" option for use with metadata by Zach Dennis, which stops individual areas from ever being hilighted
+* Handles being called on the same area twice differently; now rebuilds the hilighted regions
+* ...and I added [an example](http://davidlynch.org/js/maphilight/docs/demo_simple.html) of triggering the hilight from another element, since it's one of the most commonly asked questions
 
 Hopefully I'll be able to post here a bit more now that I have some of that guilt for not updating off my shoulders. :P

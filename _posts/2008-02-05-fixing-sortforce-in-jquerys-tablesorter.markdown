@@ -10,15 +10,15 @@ tags:
 - javascript
 - jquery
 ---
-<a href="http://www.jquery.com">jQuery</a> has a <a href="http://tablesorter.com/docs/" title="tablesorter">table-sorting plugin</a>, part of their <a href="http://ui.jquery.com/">official UI project</a>.  It's quite a nice table-sorting library, handling the common cases, with options making it configurable to suit many people's needs.
+[jQuery](http://www.jquery.com) has a [table-sorting plugin](http://tablesorter.com/docs/ tablesorter), part of their [official UI project](http://ui.jquery.com/). It's quite a nice table-sorting library, handling the common cases, with options making it configurable to suit many people's needs.
 
-<em>However</em>, I ran into a problem when using it in a project.  The documentation and the functionality don't quite line up.
+*However*, I ran into a problem when using it in a project. The documentation and the functionality don't quite line up.
 
-It has an option, sortForce, which its documentation says you can use to "add an additional forced sort that will be appended to the dynamic selections by the user".  This is a handy concept -- it lets you, say, keep records ordered by name, regardless of which other criteria the user chooses to sort by.
+It has an option, sortForce, which its documentation says you can use to "add an additional forced sort that will be appended to the dynamic selections by the user". This is a handy concept -- it lets you, say, keep records ordered by name, regardless of which other criteria the user chooses to sort by.
 
-The problem is that it actually <em>prepends</em> the sort to the user's selection, which means that the user is restricted to sorting within the forced sort.  (This is also a potentially useful tool; it's just not what the documentation indicates.)
+The problem is that it actually *prepends* the sort to the user's selection, which means that the user is restricted to sorting within the forced sort. (This is also a potentially useful tool; it's just not what the documentation indicates.)
 
-So I wrote up <a href='http://davidlynch.org/js/jquery.tablesorter.sortForce_optimal.patch' title='jQuery Tablesorter sortForce patch'>a patch</a> that fixes this, along with a few other niggling issues with sortForce.  (Its interaction with the user sorting by multiple columns, and it locking the forced-sort column in one sort direction.)  To preserve backwards-compatibility I added a new option, sortAppend, to provide the documented behavior.
+So I wrote up [a patch](http://davidlynch.org/js/jquery.tablesorter.sortForce_optimal.patch jQuery Tablesorter sortForce patch) that fixes this, along with a few other niggling issues with sortForce. (Its interaction with the user sorting by multiple columns, and it locking the forced-sort column in one sort direction.)  To preserve backwards-compatibility I added a new option, sortAppend, to provide the documented behavior.
 
 I also submitted the patch to the maintainer, so hopefully it can get incorporated.
 

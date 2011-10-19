@@ -8,4 +8,4 @@ date: 2008-07-14 09:57:41 -05:00
 tags: 
 - programming
 ---
-I've been very distracted by a new job since the end of April.  Thus, quiet.
+I've been very distracted by a new job since the end of April. Thus, quiet.

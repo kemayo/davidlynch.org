@@ -10,8 +10,8 @@ tags:
 - delicious
 - widget
 ---
-Del.icio.us rebranded to Delicious, along with a new URL.  This happened a week or two ago.
+Del.icio.us rebranded to Delicious, along with a new URL. This happened a week or two ago.
 
-<em>Incidentally</em>, this new URL broke my delicious widget.  I just noticed that a half-hour ago.
+*Incidentally*, this new URL broke my delicious widget. I just noticed that a half-hour ago.
 
-<a href="http://wordpress.org/extend/plugins/delicious-plus/">So it's fixed.</a>
+[So it's fixed.](http://wordpress.org/extend/plugins/delicious-plus/)

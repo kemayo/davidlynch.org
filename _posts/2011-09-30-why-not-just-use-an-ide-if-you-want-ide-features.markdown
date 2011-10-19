@@ -24,4 +24,4 @@ A lightweight-but-extensible editor (e.g. Sublime, TextMate, vi, and so on) tend
 
 Neither is necessarily better, but they do tend to appeal to different types of developer. Web developers, needing to work with a number of different file types, and not generally having complicated build system requirements, gravitate towards the lightweight editors.
 
-**UPDATE:** To be clear, I'm not saying either is better. It's a matter of personal choice and situation. As someone who mostly does web development in dynamic languages, I like using a fairly lightweight editing environment. If I wrote in Java I'm sure I'd be singing the praises of IntelliJ/Eclipse/whatever, because I understand that Java is almost impossible to write well *without* an IDE.
+<b>UPDATE:</b> To be clear, I'm not saying either is better. It's a matter of personal choice and situation. As someone who mostly does web development in dynamic languages, I like using a fairly lightweight editing environment. If I wrote in Java I'm sure I'd be singing the praises of IntelliJ/Eclipse/whatever, because I understand that Java is almost impossible to write well *without* an IDE.

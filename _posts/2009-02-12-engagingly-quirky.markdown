@@ -13,4 +13,4 @@ tags:
 ---
 Wordpress 2.7.1 has a wonderful quirk of immediately redirecting the "new post" page to a page that appears to just be the row of buttons from above the editor.
 
-It's probably a Firefox 3.1 quirk.  But it's still annoying.
+It's probably a Firefox 3.1 quirk. But it's still annoying.

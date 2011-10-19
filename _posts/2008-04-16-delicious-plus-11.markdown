@@ -13,6 +13,6 @@ tags:
 - widget
 - php
 ---
-New version of my <a href="http://wordpress.org/extend/plugins/delicious-plus/">del.icio.us widget</a>.
+New version of my [del.icio.us widget](http://wordpress.org/extend/plugins/delicious-plus/).
 
-The only real change is that it now allows for multiple instances of the widget.  So you can have one showing the 'food' tag, and the other showing the 'yodeling' tag, say.
+The only real change is that it now allows for multiple instances of the widget. So you can have one showing the 'food' tag, and the other showing the 'yodeling' tag, say.

@@ -13,10 +13,10 @@ tags:
 - music
 - itunes
 ---
-1. <code>sudo aptitude install mt-daapd</code>
-2. Edit <code>/etc/mt-daapd.conf</code> so that <code>mp3_dir = [your music directory]</code>.  (Also any other configuration changes you might want to make; the file is well-commented.)
-3. <code>sudo /etc/init.d/mt-daapd restart</code>
+1. `sudo aptitude install mt-daapd`
+2. Edit `/etc/mt-daapd.conf` so that `mp3_dir = [your music directory]`. (Also any other configuration changes you might want to make; the file is well-commented.)
+3. `sudo /etc/init.d/mt-daapd restart`
 
-Really this would work on any Debian-derived distro... but I've only <em>tried</em> it on Ubuntu.
+Really this would work on any Debian-derived distro... but I've only *tried* it on Ubuntu.
 
-<ins>Update: It looks like mt-daapd puts an admin interface on http://localhost:3689/ (with the default password being 'mt-daapd'), which you can use to configure things like the location of your music.  So you might not even need to do any config file editing...</ins>
+<ins>Update: It looks like mt-daapd puts an admin interface on http://localhost:3689/ (with the default password being 'mt-daapd'), which you can use to configure things like the location of your music. So you might not even need to do any config file editing...</ins>

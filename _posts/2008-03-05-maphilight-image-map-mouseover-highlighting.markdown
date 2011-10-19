@@ -12,19 +12,19 @@ tags:
 - canvas
 - maphilight
 ---
-<strong>UPDATE 2011-05-04:</strong> <a href="http://davidlynch.org/blog/2011/05/maphilight-1-3/">Version 1.3 released</a>. Works in IE9. (There's a pattern here.)
+**UPDATE 2011-05-04:** [Version 1.3 released](http://davidlynch.org/blog/2011/05/maphilight-1-3/). Works in IE9. (There's a pattern here.)
 
-<strong>UPDATE 2010-05-22:</strong> <a href="http://davidlynch.org/blog/2010/05/maphilight-1-2/">Version 1.2 released</a>. Works in IE8.
+**UPDATE 2010-05-22:** [Version 1.2 released](http://davidlynch.org/blog/2010/05/maphilight-1-2/). Works in IE8.
 
-I just released <a href="http://plugins.jquery.com/project/maphilight">maphilight</a>, a jQuery plugin that turns image maps into wonderful graphical masterpieces.
+I just released [maphilight](http://plugins.jquery.com/project/maphilight), a jQuery plugin that turns image maps into wonderful graphical masterpieces.
 
-Image maps aren't so popular any more, for some strange reason.  So a quick definition: an imagemap is an <code><img></code> with the <code>usemap</code> attribute, pointing to a <code><map></code> that describes polygons that link places within that image.
+Image maps aren't so popular any more, for some strange reason. So a quick definition: an imagemap is an `<img>` with the `usemap` attribute, pointing to a `<map>` that describes polygons that link places within that image.
 
-This sprung from me wanting to display pretty highlighting of countries on a map, but not wanting to mess with flash for it.  It involves enough annoying fiddling with <code><canvas></code> (and VML, because IE is in the stone age) that I feel I'm saving other people a decent amount of work by releasing it.
+This sprung from me wanting to display pretty highlighting of countries on a map, but not wanting to mess with flash for it. It involves enough annoying fiddling with `<canvas>` (and VML, because IE is in the stone age) that I feel I'm saving other people a decent amount of work by releasing it.
 
-<a href="http://davidlynch.org/js/maphilight/docs/demo_simple.html">Simple demo</a>
-<a href="http://davidlynch.org/js/maphilight/docs/demo_world.html">Pretty demo using a world map</a>
-<a href="http://davidlynch.org/js/maphilight/docs">Documentation</a>
-<a href="http://davidlynch.org/js/maphilight/jquery.maphilight.js">Download</a> (requires <a href="http://jquery.com">jQuery</a>)
+[Simple demo](http://davidlynch.org/js/maphilight/docs/demo_simple.html)  
+[Pretty demo using a world map](http://davidlynch.org/js/maphilight/docs/demo_world.html)  
+[Documentation](http://davidlynch.org/js/maphilight/docs)  
+[Download](http://github.com/kemayo/maphilight/) (requires [jQuery](http://jquery.com))
 
-(Tools like "<a href="http://www.kolchose.org/simon/ajaximagemapcreator/">HTML-Image map Creator WYSIWYG</a>" might be handy if you want to make image maps yourself.)
+(Tools like "[HTML-Image map Creator WYSIWYG](http://www.kolchose.org/simon/ajaximagemapcreator/)" might be handy if you want to make image maps yourself.)
