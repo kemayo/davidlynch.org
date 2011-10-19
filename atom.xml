@@ -15,7 +15,7 @@ hide_from_sitemap: true
    <email>{{ site.email }}</email>
  </author>
 
- {% for post in site.posts limit 15 %}
+ {% for post in site.posts limit:15 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{{ site.url }}{{ post.url }}"/>
