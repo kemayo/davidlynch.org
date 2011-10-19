@@ -30,6 +30,11 @@ ul, ol {
 	padding-left:2em;
 }
 
+dl dd {
+	padding-left:2em;
+	padding-bottom:1ex;
+}
+
 /* Text meant only for screen readers */
 .screen-reader-text,
 .assistive-text {
