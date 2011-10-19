@@ -1,6 +1,6 @@
 url: "http://davidlynch.org"
 pygments: true
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:title/
 markdown: rdiscount
 
 exclude: ["Rakefile", "Readme.markdown"]
