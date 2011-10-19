@@ -8,6 +8,7 @@ exclude: ["Rakefile", ".gitignore"]
 paginate: 10
 pagination_roots: ["/blog"]
 
+sitename: "David Lynch"
 subtitle: "is not a director"
 
 tag_dir: "blog/tag"

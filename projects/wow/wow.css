@@ -1,0 +1,72 @@
+body {
+	font-family:verdana, geneva, sans-serif;
+	font-size:100%;
+	margin: 0; padding: 0 1ex;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:arial, helvetica, sans-serif;
+	color: #28425E;
+}
+
+h1 {
+	font-size: 2.7em;
+	margin: 1em 0 0;
+	text-align: center;
+}
+.header .subhead {
+	font-size: 1.2em;
+	line-height: 133%;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+.header .nav {
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	padding: 0.6em 0;
+	text-transform: uppercase;
+	background:#EBEEF1 none repeat scroll 0% 0%;
+	border-top:0.4em solid #CBD3DB;
+	text-align: center;
+}
+
+.nav ul {
+	list-style: none;
+	margin: 0; padding: 0;
+}
+.nav ul li {
+	display: inline;
+}
+.nav ul li a {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.content {
+	width: 45em;
+	margin: 0 auto;
+}
+
+a, a:link {
+	color: #28425E;
+	font-weight: 700;
+}
+a:hover {
+	color: #e15119;
+}
+
+img.screenshot {
+	border: thin solid orange;
+	float: right;
+}
+
+pre.core {
+	background: #eee;
+	border-left: 1ex grey solid;
+}
+
+pre.example {
+	background: #d8fcac;
+	border-left: 1ex green solid;
+}

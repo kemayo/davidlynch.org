@@ -45,7 +45,7 @@ _gaq.push(['_trackPageview']);
 <div id="page">
     <header id="branding" role="banner">
         <hgroup>
-            <h1 id="site-title"><a href="/" title="David Lynch" rel="home">David Lynch</a></h1>
+            <h1 id="site-title"><a href="/" title="{{ page.sitename }}" rel="home">{% if page.sitename %}{{ page.sitename }}{% else %}{{ site.sitename }}{% endif %}</a></h1>
             <h2 id="site-description">{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.subtitle }}{% endif %}</h2> 
         </hgroup>
         <nav id="access" role="navigation">
