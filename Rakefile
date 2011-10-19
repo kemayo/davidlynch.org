@@ -20,7 +20,7 @@ end
 desc 'Build site with Jekyll'
 task :build => :clean do
   submodule('update')
-  jekyll('--lsi')
+  jekyll #('--lsi')
 end
 
 desc 'Start server with --auto'
@@ -33,7 +33,7 @@ task :deploy => :build do
   user = 'davidlynch'
   host = 'davidlynch.org'
   directory = '~/davidlynch.org'
-  sh 'rsync -rtzh --progress --delete _site/ #{user}@#{host}:#{directory}'
+  sh "rsync -rtzh --progress --delete _site/ #{user}@#{host}:#{directory}"
 end
 
 def cleanup
