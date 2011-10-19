@@ -1,3 +1,7 @@
+---
+layout: nil
+permalink: /.htaccess
+---
 Redirect permanent /blog/feed/ http://davidlynch.org/atom.xml
 Redirect permanent /toys http://toys.davidlynch.org
 Redirect permanent /music http://music.davidlynch.org
