@@ -10,4 +10,5 @@ Redirect permanent /pictures http://random.davidlynch.org/pictures
 Redirect permanent /id http://openid.davidlynch.org
 Redirect permanent /js http://davidlynch.org/projects
 Redirect permanent /resume.php http://davidlynch.org/resume.html
+Redirect permanent /wow http://davidlynch.org/projects/wow
 Redirect permanent /blog/wp-content/uploads http://davidlynch.org/blog/images
