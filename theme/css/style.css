@@ -321,6 +321,7 @@ article.comment {
 	font-size:1em;
 }
 .widget-area ul {
+	padding:0;
 	list-style:none;
 }
 .widget-area li {
