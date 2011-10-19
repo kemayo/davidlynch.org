@@ -1,0 +1,49 @@
+--- 
+layout: post
+title: Jekyll
+date: 2011-10-18 23:04:49 -05:00
+tags: 
+- programming
+- wordpress
+- ruby
+- jekyll
+- liquid
+---
+I've just redone my website using [Jekyll][jekyll]. It is now completely static. No PHP, no database, nothing like that.
+
+Why did I do this?
+
+ * It's quite soothing knowing that all my content is version controlled.
+ * I am now nigh-immune to traffic spikes. I was using caching with WordPress before, so it had never been an issue even when I was on the HN frontpage, but there's some peace of mind in it.
+ * WordPress had a history of security bugs which wasn't comforting. Since nothing on this new site is executable I feel pretty secure now.
+ * My site is now ridiculously flexible. Jekyll forces almost no structure on you, leaving you free to change things around as you please.
+
+I'm happy with the end result, but the process of getting there was not without pain.
+
+The initial difficulty came from Jekyll's [documentation][jekyll-docs] being somewhat lacking. I found myself somewhat confused about minor details like "how does a layout work?". After I'd cribbed that together by examining other sites posted with Jekyll, I discovered that the [template data docs][jekyll-template-data] were inaccurate / misleading, implying the presence of a `post` variable which failed to exist. It turned out to be something that's merged into `page` if you're viewing a post.
+
+I don't completely blame Jekyll for this being opaque. Jekyll uses Liquid for its templating language, which claims to be aimed at designers... and I feel it would benefit from some sort of debugging mode that dumps the current scope for examination.
+
+I resorted to reading Jekyll's source, which cleared up a number of things. However, I view it as a bad sign that I felt I had to do this. Not that a command-line driven static website generator is ever likely to be a mainstream product, but still, it's the principle of the thing.
+
+Pagination worked, but was completely lacking in configuration. Since part of my goal was to have my URLs remain the same as they were in WordPress, I had to change this. I did so with a horrible monkey-patching hack of a plugin. Specifically, I made a copy of the pagination module from Jekyll's core into my `_plugins` directory and selectively edited it to change the pagination urls.
+
+In the process I noticed a bug in the core code, and [submitted a pull request to fix it][pull-dir-accessor]. So horrible monkey patching might at least pay off this time.
+
+Also utterly broken was the related posts feature. No matter what, it always seems to think the most recent posts are the most related to anything. It's possible that running with `--lsi` would have helped with this, via complex semantic analysis, but that takes forever and I've seen others complain that it doesn't really help. So there's more monkey patching going on via [Lawrence Woodman's related posts plugin][related-posts], which I took and edited so it worked based on tags instead of categories.
+
+One thing I haven't fixed, which I'd like to, is making the automatic regeneration of your site during development / writing a lot smarter. Right now it notices a file has changed and so it regenerates every single bit of content on your site. This *does* mean that the live generated site always has recent/related posts up to date everywhere... but it'd be nice to have some sort of `--quick` option that ignored that stuff in favor of a faster development cycle.
+
+Because of the utter staticness, I naturally cannot have my own comment system in use any more. So I've switched to [Disqus][disqus], which adds commenting to the site via JavaScript. It feels sort of weird to be outsourcing a component of my user experience like this... but they seem to be trustable. Widely used, and their monetization plan is fairly transparent.
+
+If you're interested you can see the [repo for my website on github][dl-github]. It contains, in its default / post templates, markup that's compatible with any WordPress theme that's based on Toolbox, which might be of use to some.
+
+Like I said, I'm happy with how it turned out. I wouldn't recommend this *at all* for a non-technical person, but if you want to dig in and get your hands dirty then Jekyll is quite workable.
+
+[jekyll]: http://jekyllrb.com/
+[jekyll-docs]: https://github.com/mojombo/jekyll/wiki/Usage
+[jekyll-template-data]: https://github.com/mojombo/jekyll/wiki/Template-Data
+[pull-dir-accessor]: https://github.com/mojombo/jekyll/pull/415
+[related-posts]: https://github.com/LawrenceWoodman/related_posts-jekyll_plugin
+[disqus]: http://disqus.com
+[dl-github]: https://github.com/kemayo/davidlynch.org
