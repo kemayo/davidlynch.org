@@ -11,4 +11,7 @@ pagination_roots: ["/blog"]
 sitename: "David Lynch"
 subtitle: "is not a director"
 
+author: "David Lynch"
+email: "kemayo@gmail.com"
+
 tag_dir: "blog/tag"
