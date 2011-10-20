@@ -20,7 +20,7 @@ The answer is cross site scripting ("XSS").
 
 XSS is surprisingly common, and nigh-universally is caused by poorly escaped user inputs. Even user inputs which, as in this case, they obviously don't think of as user inputs. It happens when content is injected into a page, which results in the loading of arbitrary JavaScript onto that page.
 
-As such, I *own* your interaction with those sites. If I was malicious I could be harvesting your cookies from them, redirecting you to phishing sites, recording everything you type, or just snooping on everything you view. As an example of why someone might wnat to do this... in the case of these particular sites, stealing your cookies (`document.cookie`) would let me post comments as you. I could thus spam those sites using legitimate accounts that I don't have to go through the hassle of creating myself.
+As such, I *own* your interaction with those sites. If I was malicious I could be harvesting your cookies from them, redirecting you to phishing sites, recording everything you type, or just snooping on everything you view. As an example of why someone might want to do this... in the case of these particular sites, stealing your cookies (`document.cookie`) would let me post comments as you. I could thus spam those sites using legitimate accounts that I don't have to go through the hassle of creating myself.
 
 I'm not doing this, because that wouldn't be nice. All I'm doing is reversing links and spinning images, because I think that's cute.
 
