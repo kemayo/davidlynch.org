@@ -46,7 +46,7 @@ _gaq.push(['_trackPageview']);
     <header id="branding" role="banner">
         <hgroup>
             <h1 id="site-title"><a href="/" title="{{ page.sitename }}" rel="home">{% if page.sitename %}{{ page.sitename }}{% else %}{{ site.sitename }}{% endif %}</a></h1>
-            <h2 id="site-description">{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.subtitle }}{% endif %}</h2> 
+            <h2 id="site-description">{% if page.post_subtitle %}{{ page.post_subtitle }}{% else if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.subtitle }}{% endif %}</h2> 
         </hgroup>
         <nav id="access" role="navigation">
             <h1 class="assistive-text section-heading">Main menu</h1>

@@ -1,0 +1,47 @@
+--- 
+layout: post
+title: XSS is fun!
+date: 2011-10-20 15:54:45 -05:00
+post_subtitle: "is a 1337 hax0r"
+tags: 
+- programming
+- javascript
+- xss
+---
+Pretending innocence, I ask why all these high profile websites have their homepages covered in spinning images?
+
+ * [CNN][cnn] ([screenshot in case they've fixed it][cnn-screen])
+ * [The New York Times][nytimes]
+ * [Mashable][mashable]
+
+Okay, obviously enough, I'm messing with them. But how can I do that?
+
+The answer is cross site scripting ("XSS").
+
+XSS is surprisingly common, and nigh-universally is caused by poorly escaped user inputs. Even user inputs which, as in this case, they obviously don't think of as user inputs. It happens when content is injected into a page, which results in the loading of arbitrary JavaScript onto that page.
+
+As such, I *own* your interaction with those sites. If I was malicious I could be harvesting your cookies from them, redirecting you to phishing sites, recording everything you type, or just snooping on everything you view. As an example of why someone might wnat to do this... in the case of these particular sites, stealing your cookies (`document.cookie`) would let me post comments as you. I could thus spam those sites using legitimate accounts that I don't have to go through the hassle of creating myself.
+
+I'm not doing this, because that wouldn't be nice. All I'm doing is reversing links and spinning images, because I think that's cute.
+
+In this case, all these sites have screwed up by including a little bit of HTML from an ad network ([EyeWonder][eyewonder]) on their site. This HTML accepts an arbitrary URL as a parameter, and loads it in a `<script>` tag. This is quite a common way for ad networks to ruin your day, often in the name of "frame busting".
+
+Here's the offending HTML:
+
+{% gist 1302421 interim.html %}
+
+This would actually be pretty easy to fix, note. A little bit of checking of the input, to restrict it to scripts hosted only on known-trusted domains would be enough to make exploiting it almost impossible. (I say "almost" because someone sufficiently resourceful might find one of these "trusted" domains isn't as secure as they hoped and slip a script onto it. But it at least raises the bar.)
+
+If you're curious what I'm doing to make these pages spin, check out [this gist][gist] which includes the spinner script. Essentially it's just making an iframe which shows the root of the domain, and then manipulates the contents of that iframe, which it's allowed to do because the script is running on the same domain.
+
+In short: *never* trust user input. Also, don't trust your ad networks to know/care about security.
+
+This post brought to you by [my coworker Paul Banks][paul] pointing out the existence of this fun little hole on CNN. I then added the spinning myself, because it looks nice and spectacular.
+
+[cnn]: http://edition.cnn.com/eyewonder/interim.html?src=http://davidlynch.org/projects/xss/eyewonder.js
+[cnn-screen]: http://dl.dropbox.com/u/1372532/Screenshots/Screen%20Shot%202011-10-20%20at%203.33.28%20PM.png
+[mashable]: http://mashable.com/eyewonder/interim.html?src=http://davidlynch.org/projects/xss/eyewonder.js
+[nytimes]: http://nytimes.com/eyewonder/interim.html?src=http://davidlynch.org/projects/xss/eyewonder.js
+[eyewonder]: http://www.eyewonder.com/
+[paul]: http://blog.banksdesigns.co.uk/
+[gist]: https://gist.github.com/1302421
