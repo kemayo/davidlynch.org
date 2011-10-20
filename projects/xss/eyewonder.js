@@ -24,4 +24,4 @@ setTimeout(function(){
             transform(images[i], 'rotate(-' + (rotation) +'deg)');
         }
     }, 50);
-}, 1000);
+}, 3000);
