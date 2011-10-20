@@ -26,6 +26,8 @@ I'm not doing this, because that wouldn't be nice. All I'm doing is reversing li
 
 In this case, all these sites have screwed up by including a little bit of HTML from an ad network ([EyeWonder][eyewonder]) on their site. This HTML accepts an arbitrary URL as a parameter, and loads it in a `<script>` tag. This is quite a common way for ad networks to ruin your day, often in the name of "frame busting".
 
+If you're wondering who might be vulnerable to this exact hole from this exact ad network, [Google can help you with that][vulnerable]. Hint: it's a lot of sites. I just grabbed the first three big names to demonstrate with.
+
 Here's the offending HTML:
 
 {% gist 1302421 interim.html %}
@@ -45,3 +47,4 @@ This post brought to you by [my coworker Paul Banks][paul] pointing out the exis
 [eyewonder]: http://www.eyewonder.com/
 [paul]: http://blog.banksdesigns.co.uk/
 [gist]: https://gist.github.com/1302421
+[vulnerable]: http://www.google.com/#q=inurl:eyewonder/interim.html
