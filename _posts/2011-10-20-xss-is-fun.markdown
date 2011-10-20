@@ -10,9 +10,10 @@ tags:
 ---
 Pretending innocence, I ask why all these high profile websites have their homepages covered in spinning images?
 
- * [CNN][cnn] ([screenshot in case they've fixed it][cnn-screen])
- * [The New York Times][nytimes]
- * [Mashable][mashable]
+ * [CNN][cnn] ([screenshot][cnn-screen])
+ * [The New York Times][nytimes] ([screenshot][nytimes-screen])
+ * [Mashable][mashable] ([screenshot][mashable-screen])
+ * [Fox News][fox] ([screenshot][fox-screen])
 
 Okay, obviously enough, I'm messing with them. But how can I do that?
 
@@ -43,7 +44,11 @@ This post brought to you by [my coworker Paul Banks][paul] pointing out the exis
 [cnn]: http://edition.cnn.com/eyewonder/interim.html?src=http://davidlynch.org/projects/xss/eyewonder.js
 [cnn-screen]: http://dl.dropbox.com/u/1372532/Screenshots/Screen%20Shot%202011-10-20%20at%203.33.28%20PM.png
 [mashable]: http://mashable.com/eyewonder/interim.html?src=http://davidlynch.org/projects/xss/eyewonder.js
+[mashable-screen]: http://dl.dropbox.com/u/1372532/Screenshots/Screen%20Shot%202011-10-20%20at%205.49.09%20PM.png
 [nytimes]: http://nytimes.com/eyewonder/interim.html?src=http://davidlynch.org/projects/xss/eyewonder.js
+[nytimes-screen]: http://dl.dropbox.com/u/1372532/Screenshots/Screen%20Shot%202011-10-20%20at%204.40.34%20PM.png
+[fox]: http://www.foxnews.com/eyewonder/interim.html?src=http://davidlynch.org/projects/xss/eyewonder.js
+[fox-screen]: http://dl.dropbox.com/u/1372532/Screenshots/Screen%20Shot%202011-10-20%20at%205.47.08%20PM.png
 [eyewonder]: http://www.eyewonder.com/
 [paul]: http://blog.banksdesigns.co.uk/
 [gist]: https://gist.github.com/1302421
