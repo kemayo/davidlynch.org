@@ -155,6 +155,9 @@ nav {
 	border-top:1px solid #ebeef1;
 	padding-top:2px;
 }
+.post footer .entry-comments {
+	display:block;
+}
 
 /* A few things common to comments and widgets */
 

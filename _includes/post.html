@@ -20,6 +20,7 @@
         {% if post.tags %}This entry was tagged
             {% for tag in post.tags %}<a href="/blog/tag/{{ tag }}/">{{ tag }}</a>{% if forloop.last %}{% else %}, {% endif %}{% endfor %}.
         {% endif %}
-        <span class="sep">Bookmark the </span><a href="{{ post.url }}" rel="bookmark">permalink</a>
+        <span class="sep">Bookmark the </span><a href="{{ post.url }}" rel="bookmark">permalink</a>.
+        <span class="entry-comments"><a href="{{ post.url }}#disqus_thread">Comments</a>.</span>
     </footer>
 </article>
