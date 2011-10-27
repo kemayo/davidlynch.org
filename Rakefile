@@ -1,4 +1,4 @@
-task :default => :auto
+task :default => :build
 
 desc 'Clean up generated site'
 task :clean do

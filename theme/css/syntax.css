@@ -1,4 +1,6 @@
+code { background: hsl(0, 0%, 90%); color: hsl(0, 50%, 10%); }
 .highlight, .highlight *, code { font-family: Consolas, Monaco,"Lucida Console"; }
+.highlight code { background: transparent; color: inherit; }
 .highlight { background: #181818; color: #F8F8F8; padding: 16px; }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #5F5A60; font-style: italic } /* Comment */
