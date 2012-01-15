@@ -13,11 +13,13 @@ This is a slight departure from my normal choice of topics, I'll admit.
 
 Last year I decided that I wasn't happy about my weight. I'd been slowly gaining weight for the last few years, as a fairly predictable consequence of a sedentary lifestyle and liking for food. I topped out at 240 pounds, which left me rather... [chunky][chunky]. Realising that I hadn't seen a picture of myself I felt happy about for some time wasn't fun.
 
+Despite all the social features built into the apps I've been using, and my relatively active twitter use, I believe this is the first time I've mentioned anything about this to other people online. So now you know!
+
 In September I started out by counting calories, using [Lose It!][loseit]. I tried a few such apps, but that was the one that felt like the best fit for me, giving me easy data entry and a convenient "given your height/weight, eat X calories to lose Y lbs per week" which updated itself as I updated my weight.
 
 Why counting calories? I like data, and I like how tracking data tricks you into changing your behavior. The simple act of having to write down everything I ate made me conscious of where my calorie intake was coming from, and I thus made changes in my diet to avoid having to write down something horrible.
 
-Note that I didn't really start eating *better*... my diet is almost exactly what it was before, I'm just eating less of it. Particularly, I also didn't try following any sort of fad diet (low carb, shangri-la, paleo, whatever).
+Note that I didn't really start eating *better*... my diet is almost exactly what it was before, I'm just eating less of it. I particularly didn't try following any sort of fad diet (low carb, shangri-la, paleo, whatever).
 
 This worked out quite well. After one month I'd lost 13 pounds, which was encouraging. So at the start of October I joined a gym with my wife, who talked me into it because she wanted some company while she worked out.
 
