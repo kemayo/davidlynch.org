@@ -52,7 +52,7 @@ def template(name)
     contents = f.read
   end
   contents = contents.sub("%date%", t.strftime("%Y-%m-%d %H:%M:%S %z")).sub("%title%", name)
-  filename = "_posts/" + t.strftime("%Y-%m-%d-") + name + '.markdown'
+  filename = "_posts/" + t.strftime("%Y-%m-%d-") + name.downcase.gsub( /[^a-zA-Z0-9_\.]/, '_') + '.markdown'
   if File.exists? filename then
     puts "Post already exists: #{filename}"
     return
