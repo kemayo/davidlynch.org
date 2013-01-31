@@ -30,9 +30,9 @@ end
 
 desc 'Build and deploy'
 task :deploy => :build do
-  user = 'davidlynch'
-  host = 'davidlynch.org'
-  directory = '~/davidlynch.org'
+  user = 'kemayo'
+  host = 'kemayo.webfactional.com'
+  directory = '~/webapps/davidlynch'
   sh "rsync -rtzh --progress --delete _site/ #{user}@#{host}:#{directory}"
 end
 
