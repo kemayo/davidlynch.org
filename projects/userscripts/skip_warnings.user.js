@@ -10,6 +10,6 @@ if(!$) { return }
 var base = 'http://www.deviantart.com/users/outgoing?';
 var img = 'data:image/gif;base64,R0lGODlhCQAJAIABAICAgP///yH5BAEAAAEALAAAAAAJAAkAAAIShBFnwaydnlsrItduhFlDBQIF\nADs=\n';
 
-$('a[href^='+base+']').each(function(){
+$('a[href^="'+base+'"]').each(function(){
     $(this).attr('href', this.href.replace(base, '').replace(/#$/, '')).after($('<img src="'+img+'" title="external site" />'));
 })
