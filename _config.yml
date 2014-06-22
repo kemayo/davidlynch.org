@@ -1,12 +1,11 @@
 url: "http://davidlynch.org"
-pygments: true
+highlighter: pygments
 permalink: /blog/:year/:month/:title/
-markdown: rdiscount
 
 exclude: ["Rakefile", "README.markdown"]
 
 paginate: 10
-pagination_roots: ["/blog"]
+paginate_path: "/blog/page/:num"
 
 sitename: "David Lynch"
 subtitle: "is not a director"

@@ -31,7 +31,7 @@ If you're wondering who might be vulnerable to this exact hole from this exact a
 
 Here's the offending HTML:
 
-{% gist 1302421 interim.html %}
+{% gist kemayo/1302421 interim.html %}
 
 This would actually be pretty easy to fix, note. A little bit of checking of the input, to restrict it to scripts hosted only on known-trusted domains would be enough to make exploiting it almost impossible. (I say "almost" because someone sufficiently resourceful might find one of these "trusted" domains isn't as secure as they hoped and slip a script onto it. But it at least raises the bar.)
 
