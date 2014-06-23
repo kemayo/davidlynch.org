@@ -20,12 +20,12 @@ end
 desc 'Build site with Jekyll'
 task :build => :clean do
   submodule('update')
-  jekyll #('--lsi')
+  jekyll('build')
 end
 
 desc 'Start server with --auto'
 task :server => :clean do
-  jekyll('--server --auto')
+  jekyll('serve --watch')
 end
 
 desc 'Build and deploy'
