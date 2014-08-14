@@ -1,5 +1,4 @@
 ---
-layout: nil
 permalink: /.htaccess
 ---
 Redirect permanent /blog/feed/ http://davidlynch.org/atom.xml

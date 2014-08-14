@@ -25,7 +25,7 @@ end
 
 desc 'Start server with --auto'
 task :server => :clean do
-  jekyll('serve --watch')
+  jekyll('serve --watch --config _config.yml,_config_local.yml')
 end
 
 desc 'Build and deploy'
