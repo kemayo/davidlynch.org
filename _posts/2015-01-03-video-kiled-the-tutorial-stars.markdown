@@ -7,7 +7,7 @@ tags:
 - video
 - text
 - opinion
-- being-grumpy
+- cantankerous
 ---
 I _loathe_ having to watch a video or listen to audio to extract information, and would far prefer to read an article explaining the same information.
 
