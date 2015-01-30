@@ -1,0 +1,48 @@
+---
+layout: post
+title: Hubot
+date: 2015-01-30 11:23:14 -0500
+tags:
+- hubot
+- skype
+- deviantart
+- communication
+---
+My [employer][deviantart] has long used Skype as a team communication tool. This has some drawbacks, as I found myself complaining about [way back in 2011][dt-all-remote], mostly that Skype is very much not optimized for big long-running rooms, particularly on mobile devices.
+
+## Given this, why have we stuck with it?
+
+* If we switch, everyone in the company needs to change their workflow to use some new tool, and most people don't want to do this very much.
+ 
+* As such, we want to be _really_ sure that whatever we switch to is sufficiently better than Skype that we won't have to switch again anytime soon, because it'll be an even harder sell to do so.
+
+* ...but Skype really is fantastic at the "call a bunch of people" and chat, without having to care about network settings use-case. So we either need something else that's fantastic at it, or something which'll make it easy to keep using Skype to call a group of people you're chatting with.
+
+* We have existing tools set up around Skype. We wrote a bot that announces stuff we care about in our chats, which we're all very used to having around.
+
+That last point gives us some incentive to make a switch now, as Skype [decided to discontinue important parts of its API][skype-api] back in late 2013. This means that our existing integration is slowly falling apart, as the old version of Skype it has to work with becomes unable to interact with newer clients. It recently reached the point now where it cannot send messages in rooms created by newer clients, which makes it effectively useless for new projects.
+
+So. We're kind of looking at [Slack][slack], and part of working out if we like it is getting our bot in there, so we can see how it feels with our normal workflow. However, our bot is just a thin wrapper about [Skype4Py][skype4py], and porting it to use the Slack API would effectively mean rewriting it in full... which seems to be potentially wasted effort.
+
+## Enter the [Hubot][hubot]
+
+Hubot is a chat bot framework, with adaptors for approximately _everything_. It's fairly popular amongst the hip tech-company crowd, which our company is entirely too long to consider itself a part of.
+
+So I decided to port our custom stuff to hubot scripts. This turned out to be pretty easy, so long as I kept the CoffeeScript reference open in a browser tab.
+
+I've written:
+
+* A subscribe-to-deviantart-events script, which lets users/rooms sign up to be notified of the events our existing skype-bot was already announcing.
+* A Zendesk script, which can be set up as a "target" on Zendesk so we can feed tickets into the aforementioned notifier. As a bonus, I gave our helpdesk a new system they'd been requesting for ages, which announces if we've receieved more than X tickets over the last Y hours, as a warning that there might be a serious issue.
+* A [Phabricator][phabricator] integration to expand references to Phabricator objects (tickets, code-reviews, commits, etc). This one I've actually [stuck up on github][hubot-phabricator] for general use, since I think it has nothing DA-specific in it.
+
+Slack seems nice, so hopefully we'll settle on it. But if we don't, at least I've invested my time in something transferable.
+
+[deviantart]: http://www.deviantart.com/
+[dt-all-remote]: http://dt.deviantart.com/journal/We-re-all-remote-220038037
+[slack]: http://www.slack.com
+[skype-api]: http://blogs.skype.com/2013/11/06/feature-evolution-and-support-for-the-skype-desktop-api/
+[skype4py]: https://github.com/awahlig/skype4py
+[hubot]: http://hubot.github.com
+[phabricator]: http://phabricator.org
+[hubot-phabricator]: https://github.com/kemayo/hubot-phabricator
