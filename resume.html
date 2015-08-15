@@ -9,17 +9,17 @@ stylesheets:
 <ul class="knowledge">
     <li>Programming languages:
         <ul>
-            <li>PHP,</li><li>Python,</li><li>Lua,</li><li>JavaScript,</li><li>SQL,</li><li>C<sup>#</sup>,</li><li>(X)HTML,</li><li>CSS,</li><li>XML,</li><li>XSL</li>
+            <li>PHP,</li><li>Python,</li><li>Lua,</li><li>JavaScript,</li><li>SQL,</li><li>C<sup>#</sup>,</li<li>(X)HTML,</li><li title="Okay, it's not a programing language. But this location is the best fit.">CSS,</li><li>XML,</li><li>XSL</li>
         </ul>
     </li>
     <li>Tools:
         <ul>
-            <li>Subversion,</li><li>git,</li><li>CVS,</li><li>Vim,</li><li>L<sup>A</sup>T<sub>E</sub>X,</li><li>regular expressions,</li><li>the GIMP,</li><li>Microsoft Visual Studio,</li><li>Apache,</li><li>TextMate</li>
+            <li>git,</li><li>Subversion,</li><li>CVS,</li><li>Phabricator</li><li>Vim,</li><li>L<sup>A</sup>T<sub>E</sub>X,</li><li>regular expressions,</li><li>the GIMP,</li><li>Microsoft Visual Studio,</li><li>Apache,</li><li>TextMate,</li><li>Sublime Text</li>
         </ul>
     </li>
     <li>Libraries:
         <ul>
-            <li>Django,</li><li>jQuery,</li><li>PEAR,</li><li>Prototype.js,</li><li>Base2.DOM</li>
+            <li>jQuery,</li><li>PEAR,</li><li>Prototype.js,</li><li>Base2.DOM,</li><li>Django</li>
         </ul>
     </li>
 </ul>
@@ -27,10 +27,22 @@ stylesheets:
 <h3>At deviantART</h3>
 <ul class="projects">
     <li>
+        <h4>Writer</h4>
+        <span class="location"><a href="http://spyed.deviantart.com/journal/Introducing-Sta-sh-and-Sta-sh-Writer-265622160#writer">announcement</a></span>
+        <p>Lead development of a rich text editing component. Took user input and translated it into our internal markup language ("dAml"), with support for embedding various media types. When editing existing content, translated dAml into HTML and back when done.</p>
+        <p>Written in JavaScript, using jQuery. Also wrote backend support for media types in PHP.</p>
+    </li>
+    <li>
+        <h4>Discovery Tags</h4>
+        <span class="location"><a href="http://wreckling.deviantart.com/journal/Site-Update-Tags-are-the-new-Keywords-478709515">announcement</a></span>
+        <p>Lead development on adding a tagging system to DeviantArt. Took existing content (~300 million items) which had a freeform "keywords" text field, and converted it to more normalized "tags". Also provided tools for people to manage their converted data.</p>
+        <p>Written in PHP with an in-house framework. Used redis to build tag activity feeds and autocompletion.</p>
+    </li>
+    <li>
         <h4>Groups</h4>
         <span class="location"><a href="http://groups.deviantart.com/">groups.deviantart.com</a></span>
         <p>"Groups allows you to create your own community within deviantART on whatever topic(s) interest you most. With Groups, you can now have public and private exchanges with your friends, fellow artists, and fans!"</p>
-        <p>Community platform with powerful permission system.</p>
+        <p>Community platform with powerful permission system. Too powerful, in retrospect.</p>
         <p>Written in PHP with an in-house framework. Extensive use of jQuery in front-end.</p>
     </li>
 </ul>
@@ -102,40 +114,37 @@ stylesheets:
 <h3>Personal Projects</h3>
 <ul class="projects">
     <li>
-        <h4>FicWad</h4>
-        <span class="location"><a href="http://www.ficwad.com">ficwad.com</a></span>
-        <p>Fiction archive site, with use of caching, performance-tuned SQL, Unicode support, using AJAX where appropriate.</p>
-        <p>Written with PHP and MySQL, using Base2.DOM for javascript assistance, and Python for backend scripts.  Has to cope with high traffic on limited hardware; many optimizations in place.</p>
+        <h4>Sublime Text git integration</h4>
+        <span class="location"><a href="https://github.com/kemayo/sublime-text-git">github.com</a></span>
+        <p>Most popular plugin for Git integration with the <a href="http://www.sublimetext.com/">Sublime Text</a> editor. Installed around 400k times.</p>
+        <p>Python, maintaining a Python 2 branch for Sublime Text 2 and a Python 3 branch for Sublime Text 3.</p>
     </li>
     <li>
         <h4>maphilight</h4>
-        <span class="location"><a href="http://plugins.jquery.com/project/maphilight">plugins.jquery.com</a></span>
-        <p><a href="http://jquery.com">jQuery</a> plugin that adds mouseover highlighting to image maps.  Created for a project involving maps of the world, to add some "punch" to the interaction.</p>
-        <p>Pure JavaScript, with cross-browser compatibility techniques to use VML in IE and &lt;canvas&gt; in more capable browsers.  Highly customizable through documented APIs.</p>
+        <span class="location"><a href="https://github.com/kemayo/maphilight">github.com</a></span>
+        <p><a href="http://jquery.com">jQuery</a> plugin that adds mouseover highlighting to image maps. Created for a project involving maps of the world, to add some "punch" to the interaction.</p>
+        <p>Pure JavaScript, with cross-browser compatibility techniques to use VML in IE and &lt;canvas&gt; in more capable browsers. Highly customizable through documented APIs.</p>
+    </li>
     <li>
         <h4>World of Warcraft addons</h4>
         <span class="location"><a href="http://davidlynch.org/wow">davidlynch.org/wow</a></span>
         <p>Written in Lua and XML, employing a poorly documented API to create usable enhancements of people's gaming experience.  Also created and maintained libraries for other's use.</p>
     </li>
     <li>
-        <h4>lj.py</h4>
-        <span class="location"><a href="http://ljpy.googlecode.com">ljpy.googlecode.com</a></span>
-        <p>Object oriented, Python implementation of the LiveJournal API.</p>
-    </li>
-    <li>
-        <h4>akismet.py</h4>
-        <span class="location"><a href="http://akismetpy.googlecode.com">akismetpy.googlecode.com</a></span>
-        <p>Python implementation of the Akismet spam-checking API.</p>
+        <h4>FicWad</h4>
+        <span class="location"><a href="http://www.ficwad.com">ficwad.com</a></span>
+        <p>Fiction archive site, with use of caching, performance-tuned SQL, Unicode support, using AJAX where appropriate.</p>
+        <p>Written with PHP and MySQL, and Python for backend scripts. LESS for stylesheets, using resposive layouts. Has to cope with high traffic on limited hardware; many optimizations in place.</p>
     </li>
 </ul>
 
 <h2>Employment history</h2>
 <ul class="jobs">
     <li>
-        <h4><a href="http://www.deviantart.com">deviantART, Inc.</a></h4>
-        <span class="title">Developer</span>
+        <h4><a href="http://www.deviantart.com">DeviantArt, Inc.</a></h4>
+        <span class="title">Lead Developer</span>
         <span class="location">Los Angeles, CA</span>
-        <span class="dates">2008 - present</span>
+        <span class="dates">2008 - 2015</span>
     <li>
         <h4><a href="http://www.esri.com">Environmental Systems Research Institute, Inc.</a></h4>
         <span class="title">Special Projects Programmer</span>
