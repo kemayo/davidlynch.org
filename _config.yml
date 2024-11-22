@@ -1,5 +1,5 @@
 url: "http://davidlynch.org"
-highlighter: pygments
+highlighter: rouge
 permalink: /blog/:year/:month/:title/
 
 exclude: ["Rakefile", "README.markdown"]
@@ -14,3 +14,9 @@ author: "David Lynch"
 email: "kemayo@gmail.com"
 
 tag_dir: "blog/tag"
+
+plugins:
+  - jekyll-tagging-related_posts
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate

@@ -17,7 +17,7 @@ module Jekyll
       site.tags[tag].each do |post|
         #post.transform
         self.data['posts'] << post
-        post.tags.each do |rel| 
+        post.data['tags'].each do |rel| 
           self.data['related'].push(rel)
         end
       end
@@ -49,7 +49,7 @@ module Jekyll
       if site.layouts.key? 'tag_index'
         dir = site.config['tag_dir'] || 'tags'
         site.tags.keys.each do |tag|
-          write_tag_index(site, File.join(dir, tag.gsub(/\s/, "-").gsub(/[^\w-]/, '').downcase), tag)
+          write_tag_index(site, File.join(dir, Utils.slugify(tag)), tag)
         end
       end
 

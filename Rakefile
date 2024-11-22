@@ -37,23 +37,26 @@ task :deploy => :build do
 end
 
 desc 'Make a new post'
-task :post, [:name] do |t, args|
+task :post, [:name, :date] do |t, args|
   if args.name then
-    template(args.name)
+    template(args.name, args.date)
   else
     puts "Name required"
   end
 end
 
-def template(name)
-  t = Time.now
+def template(name, date = Time.now)
+  if date.is_a?(String)
+    require 'date'
+    date = DateTime.parse(date)
+  end
   contents = "" # otherwise using it below will be badly scoped
   File.open("_posts/yyyy-mm-dd-template.markdown", "rb") do |f|
     contents = f.read
   end
-  contents = contents.sub("%date%", t.strftime("%Y-%m-%d %H:%M:%S %z")).sub("%title%", name)
-  filename = "_posts/" + t.strftime("%Y-%m-%d-") + name.downcase.gsub( /[^a-zA-Z0-9_\.]/, '-') + '.markdown'
-  if File.exists? filename then
+  contents = contents.sub("%date%", date.strftime("%Y-%m-%d %H:%M:%S %z")).sub("%title%", name)
+  filename = "_posts/" + date.strftime("%Y-%m-%d-") + name.downcase.gsub( /[^a-zA-Z0-9_\.]/, '-') + '.markdown'
+  if File.exist? filename then
     puts "Post already exists: #{filename}"
     return
   end
