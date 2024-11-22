@@ -150,6 +150,14 @@ nav {
 .entry-content li {
 	margin-bottom:0.5ex;
 }
+.entry-content img {
+	max-width: 100%;
+}
+.entry-content div.highlight {
+	border-left: #ccc 5px solid;
+	padding-left: 2px;
+	margin-bottom: 1em;
+}
 
 .post footer {
 	border-top:1px solid #ebeef1;
