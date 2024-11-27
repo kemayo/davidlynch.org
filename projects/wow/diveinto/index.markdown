@@ -12,14 +12,14 @@ It's worse if you're being introduced to it through a framework. Ace2 is a wonde
 
 This is not a basic, simple tutorial. I'm going to take a small addon and vivisect it. I'll explain how everything fits together, and why some choices were made. Hopefully when I'm done you'll have a greater understanding of addons in general.
 
-I have no intention of explaining anything about the WoW API that isn't directly relevant. You want that, go to [wowwiki](http://www.wowwiki.com/API). You may find [Programming in Lua](http://www.lua.org/pil/) useful as a much more thorough presentation of Lua than I'll provide.
+I have no intention of explaining anything about the WoW API that isn't directly relevant. You want that, go to [the wiki](https://warcraft.wiki.gg/wiki/API). You may find [Programming in Lua](http://www.lua.org/pil/) useful as a much more thorough presentation of Lua than I'll provide.
 
 So. The addon. I have chosen OpenAll. Because I wrote it, and it's a useful combination of minimalism and utility which will require touching on disparate topics to understand. Also, it deals with one of the more painful areas to write an addon for: the mailbox. The mail API is crap. Crap, crap, crap. I'll explain why later.
 
-There are only two files in this addon, and you can download them [here](http://files.wowace.com/OpenAll/OpenAll.zip)
+There are only two files in this addon, and you can download them [here](https://github.com/kemayo/wow-openall).  (2024 note: though you'll have to go a long way back to find the exact versions described in this tutorial)
 
 OpenAll.toc:
-{% highlight sh %}
+```sh
 ## Interface: 20100
 ## Title: OpenAll
 ## Notes: Open all your mail
@@ -31,10 +31,10 @@ OpenAll.toc:
 ## X-LoadOn-Mailbox: true
 
 OpenAll.lua
-{% endhighlight %}
+```
 
 OpenAll.lua:
-{% highlight lua %}
+```lua
 local deletedelay, t = 0.5, 0
 local takingOnlyCash = false
 local button, button2, waitForMail, doNothing, openAll,
@@ -77,8 +77,8 @@ function waitForMail()
 	t = t + arg1
 	if t > deletedelay then
 		button:SetScript("OnUpdate", nil)
-		local _,_,_,_,money,_,_,hasItem = GetInboxHeaderInfo(lastopened)
-		if money > 0 or ((not takingOnlyCash) and hasItem) then
+		local _, _, _, _, money, _, _, hasItem = GetInboxHeaderInfo(lastopened)
+		if money > 0 or ((not takingOnlyCash) and hasItem) then --deleted or bumped
 			openMail(lastopened)
 		else
 			openMail(lastopened - 1)
@@ -117,11 +117,11 @@ button:SetScript("OnClick", openAll)
 button:SetScript("OnEvent", onEvent)
 button2 = makeButton("OpenAllButton2", "Take Cash", 60, 25, 20, -410)
 button2:SetScript("OnClick", openAllCash)
-{% endhighlight %}
+```
 
 ...overwhelming, no?  Let's start from the top.
 
-When World of Warcraft loads it looks through your addon folder ([wowdir]/Interface/Addons). In every directory there it looks for a file with the same name as that directory and a .toc extension. If it finds one, that's an addon.
+When World of Warcraft loads it looks through your addon folder ({wowdir}/Interface/Addons). In every directory there it looks for a file with the same name as that directory and a .toc extension. If it finds one, that's an addon.
 
 The .toc (Table Of Contents) file tells World of Warcraft about your addon. At a minimum the .toc tells WoW what it's called and which files to load.
 
@@ -129,7 +129,7 @@ Lines that start with `#` are comments. Lines starting with `##` are special com
 
 Let's look at OpenAll.toc's comments again:
 
-{% highlight sh %}
+```sh
 ## Interface: 20100
 ## Title: OpenAll
 ## Notes: Open all your mail
@@ -139,7 +139,7 @@ Let's look at OpenAll.toc's comments again:
 ## LoadManagers: SupplyAndDemand, ForkliftGnome
 ## X-S&D-AtMail: true
 ## X-LoadOn-Mailbox: true
-{% endhighlight %}
+```
 
 `Interface` says what version of WoW this addon was written for. In this case, `20100` translates to 2.1. You have to explicitly tell WoW to load addons with an interface version older than the current one.
 
@@ -151,9 +151,9 @@ Comments that start with `X-` aren't used directly by WoW for anything. They're 
 
 The next part of OpenAll.toc is rather short.
 
-{% highlight sh %}
+```sh
 OpenAll.lua
-{% endhighlight %}
+```
 
 That's a list of all the files that make up OpenAll, one per line. Like I said, this is a minimal addon.
 
@@ -161,9 +161,9 @@ Not that it matters here, but these files are loaded in the order you list them.
 
 There's not really anything else that you need to know about .toc files, so we're moving on to the far more complicated topic of Lua.
 
-{% highlight lua %}
+```lua
 local deletedelay, t = 0.5, 0
-{% endhighlight %}
+```
 
 It's just the first line, and already there are five new concepts for us: variables, assignment, types, scope, and blocks.
 
@@ -200,26 +200,26 @@ The current file is a block.
 
 So:
 
-{% highlight lua %}
+```lua
 local topLevel = 'hello'
 do
 	local i = 1
 	print(topLevel) -- prints 'hello'
 end
 print(i) -- prints 'nil', not '1'
-{% endhighlight %}
+```
 
 As you might imagine, it's good practice to make everything that doesn't need to be accessed by anyone else `local`.
 
 You can see all this used over the next few lines of the file:
 
-{% highlight lua %}
+```lua
 local takingOnlyCash = false
 local button, button2, waitForMail, doNothing, openAll,
 	openAllCash, openMail, lastopened, stopOpening, onEvent
 local baseInboxFrame_OnClick
 local _G = _G
-{% endhighlight %}
+```
 
 You will notice that declaring something as `local` without assigning anything to it immediately is possible.
 
@@ -229,16 +229,16 @@ The last line looks weird, but is just a way of bringing something global into t
 
 `_G` is a magic variable. It's a table representing the global environment. So these two statements are exactly equivalent in their effect:
 
-{% highlight lua %}
+```lua
 someName = 'George'
 _G["someName"] = 'George'
-{% endhighlight %}
+```
 
 This is useful in the case where you want to access a global variable whose name you don't know yet, as you'll see later.
 
-{% highlight lua %}
+```lua
 function doNothing() end
-{% endhighlight %}
+```
 
 Our first function!  Those of you with a background in programming or maths will know that a function is a way to apply a series of steps to a given input. If you didn't know that... I just told you. The process of applying a function to some inputs is called "calling" it.
 
@@ -246,12 +246,12 @@ This one, as you might guess from the name, does nothing. It still introduces us
 
 Here's a really simple function that actually does something:
 
-{% highlight lua %}
+```lua
 local function addTogether(a, b)
 	return a + b
 end
 print(addTogether(5, 2)) -- prints '7'
-{% endhighlight %}
+```
 
 `return` ends a function, declaring that whatever you told it to return is the result of the function.
 
@@ -261,46 +261,47 @@ A function is also a block.
 
 I'm going to jump to the very bottom of OpenAll.lua now, because it'll make more sense that way. Trust me.
 
-{% highlight lua %}
+```lua
 local function makeButton(id, text, w, h, x, y)
 	local button = CreateFrame("Button", id, InboxFrame, "UIPanelButtonTemplate")
-{% endhighlight %}
+```
 
 `makeButton` is a convenience function, written so I don't have to write out the exact same code twice to create and position two buttons. This lets me pass the only differences between then as arguments.
 
-In `makeButton` we see our first WoW API functions being used. [CreateFrame](http://wowwiki.com/API_CreateFrame), well, creates a [frame](http://wowwiki.com/Widget_API). A frame is the basic component of the WoW interface. It can represent pretty much anything. In this case we're creating a type of frame called a "Button", which is a child of InboxFrame, and is positioned relative to the top of InboxFrame.
+In `makeButton` we see our first WoW API functions being used. [CreateFrame](https://warcraft.wiki.gg/wiki/API_CreateFrame), well, creates a [frame](https://warcraft.wiki.gg/wiki/UIOBJECT_Frame). A frame is the basic component of the WoW interface. It can represent pretty much anything. In this case we're creating a type of frame called a `Button`, which is a child of `InboxFrame`, and is positioned relative to the top of `InboxFrame`.
 
-`button` is produced by CreateFrame. `button` is a frame. In fact, a frame is just a table, as discussed briefly above. Tables are used for a lot of things in Lua, especially things where other languages would use "classes" or "objects".
+`button` is produced by `CreateFrame`. `button` is a frame. In fact, a frame is just a table, as discussed briefly above. Tables are used for a lot of things in Lua, especially things where other languages would use "classes" or "objects".
 
 A table is created by using a pair of curly braces (`{ }`), and consists of a set of key-value pairs. You can access values from the table in two ways:
 
-{% highlight lua %}local t = {}
+```lua
+local t = {}
 t.somevalue = 1
 t["value with a space"] = 17
-{% endhighlight %}
+```
 
 Anything that can be held in a variable can be a table key or value. *Anything*. Other tables, functions, whatever.
 
-{% highlight lua %}
+```lua
 	button:SetWidth(w)
 	button:SetHeight(h)
 	button:SetPoint("CENTER", InboxFrame, "TOP", x, y)
 	button:SetText(text)
 	return button
 end
-{% endhighlight %}
+```
 
 Here we see new syntax again. It's just a shortcut for calling a function in a table... `button:SetHeight(h)` means exactly the same thing as `button.SetHeight(button, h)`
 
 As I said, tables are often used where other languages would use "objects". Frames are an example of this -- they're a bundle of related functions and data that are used to manipulate something in the UI. Just to give you an example of how this works:
 
-{% highlight lua %}
+```lua
 local cat = {name="Mittens", age=17, color="Too scarred to tell"}
 function cat:Purr()
 	print(self.name .. ' purrs loudly')
 end
 cat:Purr() -- prints "Mittens purrs loudly"
-{% endhighlight %}
+```
 
 That's obviously a bit contrived. But you get the idea.
 
@@ -308,24 +309,24 @@ It's worth noting that the function declaration above uses a very similar syntax
 
 Now you know that, the code that's actually using `makeButton` should make sense:
 
-{% highlight lua %}
+```lua
 button = makeButton("OpenAllButton", "Take All", 60, 25, -50, -410)
 button:SetScript("OnClick", openAll)
 button:SetScript("OnEvent", onEvent)
 button2 = makeButton("OpenAllButton2", "Take Cash", 60, 25, 20, -410)
 button2:SetScript("OnClick", openAllCash)
-{% endhighlight %}
+```
 
 `button:SetScript` lets you assign a function that will be called when a particular thing happens to the frame in question. In this case we say that when someone clicks on it we want `openAll` to be called, and when an event occurs (I'll get back to that) we want `onEvent` to be called.
 
 Back to the top!
 
-{% highlight lua %}
+```lua
 function openAll()
 	if GetInboxNumItems() == 0 then return end
 	button:SetScript("OnClick", nil)
 	button2:SetScript("OnClick", nil)
-{% endhighlight %}
+```
 
 Here we define `openAll`, the function I mentioned earlier that gets called when someone clicks on one of the buttons we made.
 
@@ -333,80 +334,80 @@ Excitingly, it uses our first conditional. A conditional is a way of saying "if 
 
 If there's mail, we tell the buttons that clicking on them shouldn't do anything while we're working.
 
-{% highlight lua %}
+```lua
 	baseInboxFrame_OnClick = InboxFrame_OnClick
 	InboxFrame_OnClick = doNothing
-{% endhighlight %}
+```
 
 And now we "hook" `InboxFrame_OnClick`, the Blizzard function that gets called whenever you click on the inbox. "Hooking" refers to substituting your own function for another one. Sometimes your substitute function will then call the original function, and sometimes (like now) you completely replace it. We're completely replacing it with the aptly named `doNothing` that we defined earlier, because we don't want clicking on the inbox to do anything while we're meddling with mail.
 
-{% highlight lua %}
+```lua
 	for i = 1, 7 do _G["MailItem" .. i .. "ButtonIcon"]:SetDesaturated(1) end
-{% endhighlight %}
+```
 
 Our first loop!  A loop repeats a block of code based on a particular condition. A `for` loop like this repeats a specified number of times. The syntax is: `for [loop variable] = [start value], [end value], [increase by] do ... end`
 
 In this case we want to call a function on a set of objects whose names only differ by one number... `MailItem1ButtonIcon` through `MailItem7ButtonIcon`, the icons in your mailbox. This is why we brought up the `_G` magic table earlier... it means that we can build the name of the button as a string and look it up in the global table. To build the name we use the <b>concatenation</b> operator: `..`
 
-{% highlight lua %}
+```lua
 	button:RegisterEvent("UI_ERROR_MESSAGE")
-{% endhighlight %}
+```
 
 Then we tell the button that we want it to listen out for a particular event, named UI_ERROR_MESSAGE. When it sees that particular event occur it calls the function that we earlier set up as `button`'s OnEvent handler.
 
-[Events](http://wowwiki.com/Events_%28API%29) are a very important part of WoW addon writing. Nothing happens unless an event triggers it. The `:SetScript` stuff we did earlier is just a specialized way of registering for events that only affect one particular frame, for instance. A big part of writing an addon is working out what events you'll need to register for and respond to. Fortunately, [wowwiki](http://wowwiki.com/Events_%28API%29) has a quite comprehensive list.
+[Events](https://warcraft.wiki.gg/wiki/Events) are a very important part of WoW addon writing. Nothing happens unless an event triggers it. The `:SetScript` stuff we did earlier is just a specialized way of registering for events that only affect one particular frame, for instance. A big part of writing an addon is working out what events you'll need to register for and respond to. Fortunately, [the wiki](https://warcraft.wiki.gg/wiki/Events) has a quite comprehensive list.
 
 The event system also explains why even addons that don't require any UI will create a frame -- you need one to receive events. Fortunately a basic frame is invisible until you tell it otherwise.
 
 (As an aside... `:RegisterEvent` is slightly misnamed. It might be better thought of as `:RegisterForEvent`.)
 
-{% highlight lua %}
+```lua
 	openMail(GetInboxNumItems())
 end
-{% endhighlight %}
+```
 
 And we call `openMail` with the number of items in the inbox as its argument, asking it to pick up the item from that mail slot. (We're picking things up from the end of the mailbox and working towards the start because that means we don't have to worry about  items changing position while we work.)
 
-{% highlight lua %}
+```lua
 function openAllCash()
 	takingOnlyCash = true
 	openAll()
 end
-{% endhighlight %}
+```
 
 This is the handler for the other button we defined earlier -- all it does is set a variable to true so we can check it later, and call openAll.
 
-{% highlight lua %}
+```lua
 function openMail(index)
-{% endhighlight %}
+```
 
 `openMail` is the core of the addon. It examines a piece of mail and decides whether or not it can collect an item or cash from it.
 
-{% highlight lua %}
+```lua
 	if not InboxFrame:IsVisible() or index == 0 then return stopOpening() end
-{% endhighlight %}
+```
 
 Before trying to do anything it checks to see whether the inbox is actually open, or whether we've already opened everything. (It would know that we'd opened everything if it was asked to pick up item 0 from the inbox, because that doesn't exist.)
 
-{% highlight lua %}
+```lua
 	local _, _, _, _, money, COD, _, hasItem = GetInboxHeaderInfo(index)
-{% endhighlight %}
+```
 
 To work out what we're going to do with the item in slot `index` we call `GetInboxHeaderInfo`, an API function.
 
 `_` is new here -- it's a variable like any other, but by convention it's always used as a throwaway. You assign values that you're not interested in to it, and then ignore it. In this case all we're interested in is how much money is on the mail, whether it's C.O.D., and whether there's an item attached.
 
-{% highlight lua %}
+```lua
 	if money > 0 then
 		TakeInboxMoney(index)
 	elseif (not takingOnlyCash) and hasItem and COD <= 0 then
 		TakeInboxItem(index)
 	end
-{% endhighlight %}
+```
 
 If there's money, we take it. If we're not taking only cash and there's an item and it's *not* C.O.D, we take it.
 
-{% highlight lua %}
+```lua
 	local items = GetInboxNumItems()
 	if items &gt; 1 and index &lt; items + 1 then
 		lastopened = index
@@ -416,28 +417,28 @@ If there's money, we take it. If we're not taking only cash and there's an item 
 		stopOpening()
 	end
 end
-{% endhighlight %}
+```
 
 We check whether there are any more items in the mail -- note that `GetInboxNumItems` ***won't*** yet have noticed if we've emptied (and thus auto-deleted) the mail message we just dealt with. So we check whether there's more than one mail left, and make sure that we're not outside the bounds of the available messages. (This is probably overly cautious. It's mainly a sanity check in case something really weird happens.)
 
 If there's more mail left we wait to see whether picking up the current mail item/cash actually succeeded. We do this by setting "OnUpdate" for the button. OnUpdate is a very useful thing, and easy to abuse. The function you assign to it will be called every "tick", meaning every time the UI updates. So *try* not to do anything intensive in it.
 
-{% highlight lua %}
+```lua
 function waitForMail()
 	t = t + arg1
-{% endhighlight %}
+```
 
-We add the time since the OnUpdate function was last called to `t`, which we had set to 0 before setting up the OnUpdate. This is done so we can wait a specified amount of time before we check mail again.
+We add the time since the `OnUpdate` function was last called to `t`, which we had set to 0 before setting up the `OnUpdate`. This is done so we can wait a specified amount of time before we check mail again.
 
 `arg1` (and, indeed `arg2` through `arg8`) are "magic" globals set by Blizzard, which work as function arguments for events.
 
-{% highlight lua %}
+```lua
 	if t > deletedelay then
-{% endhighlight %}
+```
 
 Specifically, we wait for `t` to be greater than `deletedelay`, which we set up at the very start of the file to 0.5. So we're only checking every half second.
 
-{% highlight lua %}
+```lua
 		button:SetScript("OnUpdate", nil)
 		local _,_,_,_,money,COD,_,hasItem = GetInboxHeaderInfo(lastopened)
 		if money > 0 or ((not takingOnlyCash) and COD <=0 hasItem) then
@@ -447,13 +448,13 @@ Specifically, we wait for `t` to be greater than `deletedelay`, which we set up 
 		end
 	end
 end
-{% endhighlight %}
+```
 
 If there's still money or an item on the last piece of mail we tried to open, try to open it again. Sometimes a request to open mail can get lost, you see. If not, move one step towards the "front" of the mailbox and start opening again.
 
 (This is the core of my complaints about the mail system in WoW. Unlike many other segments of the game, you don't get any events when the mailbox updates, so you have to do this OnUpdate checking and hope you've thought of all the possible conditions.)
 
-{% highlight lua %}
+```lua
 function stopOpening()
 	button:SetScript("OnUpdate", nil)
 	button:SetScript("OnClick", openAll)
@@ -465,11 +466,11 @@ function stopOpening()
 	button:UnregisterEvent("UI_ERROR_MESSAGE")
 	takingOnlyCash = false
 end
-{% endhighlight %}
+```
 
 `stopOpening` just sets everything back to how it was before we started opening mail. It hooks the buttons back up, de-greys the icons, and stops listening for error messages.
 
-{% highlight lua %}
+```lua
 function onEvent(frame, event, arg1, arg2, arg3, arg4)
 	if event == "UI_ERROR_MESSAGE" then
 		if arg1 == ERR_INV_FULL then
@@ -477,14 +478,14 @@ function onEvent(frame, event, arg1, arg2, arg3, arg4)
 		end
 	end
 end
-{% endhighlight %}
+```
 
-About those error messages... this is the listener function. You can see the main difference between the OnUpdate and OnEvent is that OnEvent gets the magic globals passed to it normally, instead of having to rely on the magic.
+About those error messages... this is the listener function. You can see the main difference between the `OnUpdate` and `OnEvent` is that `OnEvent` gets the magic globals passed to it normally, instead of having to rely on the magic.
 
-So first it checks whether the event that called it was the event we care about -- UI_ERROR_MESSAGE. If so, it checks whether the error message is `ERR_INV_FILL`. If so, it stops trying to open mail, because there's no more room in your bags.
+So first it checks whether the event that called it was the event we care about -- `UI_ERROR_MESSAGE`. If so, it checks whether the error message is `ERR_INV_FILL`. If so, it stops trying to open mail, because there's no more room in your bags.
 
 `ERR_INV_FILL` is an example of an automatically translated ("localized") global string -- Blizzard has a lot of these available which are used in their own UI code. They allow you to check whether something was said without worrying about whether it was said in English or Korean or some other language. If all you cared about was people in the US then you could check for "Inventory is full." for the exact same effect.
 
 And there you have it. You now know how to write an addon that can pick up all the mail in your mailbox.
 
-I'd like to thank [Mark Pilgrim](http://www.diveintomark.org), because I stole his "Dive Into" naming scheme. Then I'd like to thank my wife, for providing invaluable beta-reading services.
+I'd like to thank [Mark Pilgrim](http://www.diveintomark.org), because I stole his "Dive Into" naming scheme. Then I'd like to thank my spouse, for providing invaluable beta-reading services.
