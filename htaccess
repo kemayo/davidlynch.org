@@ -1,13 +1,14 @@
 ---
 permalink: /.htaccess
 ---
-Redirect permanent /blog/feed/ http://davidlynch.org/atom.xml
-Redirect permanent /toys http://toys.davidlynch.org
-Redirect permanent /music http://music.davidlynch.org
-Redirect permanent /misc http://random.davidlynch.org
-Redirect permanent /pictures http://random.davidlynch.org/pictures
-Redirect permanent /id http://openid.davidlynch.org
-Redirect permanent /js http://davidlynch.org/projects
-Redirect permanent /resume.php http://davidlynch.org/resume.html
-Redirect permanent /wow http://davidlynch.org/projects/wow
-Redirect permanent /blog/wp-content/uploads http://davidlynch.org/blog/images
+Redirect permanent /blog/feed/ https://davidlynch.org/atom.xml
+Redirect permanent /feed/ https://davidlynch.org/atom.xml
+Redirect permanent /toys https://toys.davidlynch.org
+Redirect permanent /music https://music.davidlynch.org
+Redirect permanent /misc https://random.davidlynch.org
+Redirect permanent /pictures https://random.davidlynch.org/pictures
+Redirect permanent /id https://openid.davidlynch.org
+Redirect permanent /js https://davidlynch.org/projects
+Redirect permanent /resume.php https://davidlynch.org/resume.html
+Redirect permanent /wow https://projects.davidlynch.org/wow
+Redirect permanent /blog/wp-content/uploads https://davidlynch.org/blog/images
