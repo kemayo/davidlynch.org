@@ -45,10 +45,12 @@ task :post, [:name, :date] do |t, args|
   end
 end
 
-def template(name, date = Time.now)
+def template(name, date)
+  require 'date'
   if date.is_a?(String)
-    require 'date'
     date = DateTime.parse(date)
+  else
+    date = DateTime.now
   end
   contents = "" # otherwise using it below will be badly scoped
   File.open("_posts/yyyy-mm-dd-template.markdown", "rb") do |f|
