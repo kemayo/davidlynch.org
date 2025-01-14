@@ -4,6 +4,7 @@ title: Fixing sortForce in jQuery's tablesorter
 excerpt: ""
 wordpress_id: 21
 wordpress_url: http://davidlynch.org/blog/2008/02/fixing-sortforce-in-jquerys-tablesorter/
+disqus_threadid: 445428442
 date: 2008-02-05 14:49:47 -06:00
 tags: 
 - programming

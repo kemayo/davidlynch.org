@@ -4,6 +4,7 @@ title: "Losing Weight"
 post_subtitle: "changes the subject sometimes"
 date: 2012-01-14 17:49:33 -0600
 published: true
+disqus_threadid: 539464086
 tags:
 - fitness
 - weight

@@ -3,6 +3,7 @@ layout: post
 title: XSS is fun!
 date: 2011-10-20 15:54:45 -05:00
 post_subtitle: "is a 1337 hax0r"
+disqus_threadid: 449022775
 tags: 
 - programming
 - javascript

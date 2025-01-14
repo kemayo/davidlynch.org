@@ -4,6 +4,7 @@ title: Unintuitve effect of overflow:hidden
 excerpt: ""
 wordpress_id: 103
 wordpress_url: http://davidlynch.org/blog/?p=103
+disqus_threadid: 445428618
 date: 2011-01-30 22:11:25 -06:00
 tags: 
 - programming

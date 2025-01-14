@@ -2,6 +2,7 @@
 layout: post
 title: Jekyll
 date: 2011-10-18 23:04:49 -05:00
+disqus_threadid: 447656589
 tags: 
 - programming
 - wordpress

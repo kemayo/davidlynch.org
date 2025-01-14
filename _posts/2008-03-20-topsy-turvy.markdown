@@ -4,6 +4,7 @@ title: Topsy turvy
 excerpt: ""
 wordpress_id: 28
 wordpress_url: http://davidlynch.org/blog/?p=28
+disqus_threadid: 445428484
 date: 2008-03-20 20:57:30 -05:00
 tags: 
 - programming

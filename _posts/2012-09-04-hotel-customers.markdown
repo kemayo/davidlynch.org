@@ -3,6 +3,7 @@ layout: post
 title: "I am not this hotel's customer"
 date: 2012-09-04 23:26:28 -0500
 published: true
+disqus_threadid: 831457507
 tags:
 - hotels
 - business

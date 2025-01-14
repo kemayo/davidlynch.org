@@ -2,6 +2,7 @@
 layout: post
 title: "Maphilight for jQuery 1.9.0"
 date: 2013-01-21 15:49:37 -0600
+disqus_threadid: 1039201157
 tags:
 - programming
 - javascript

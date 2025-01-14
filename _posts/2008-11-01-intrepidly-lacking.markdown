@@ -4,6 +4,7 @@ title: Intrepidly lacking
 excerpt: ""
 wordpress_id: 46
 wordpress_url: http://davidlynch.org/blog/?p=46
+disqus_threadid: 445428544
 date: 2008-11-01 16:15:29 -05:00
 tags: 
 - personal

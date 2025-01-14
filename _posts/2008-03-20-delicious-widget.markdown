@@ -4,6 +4,7 @@ title: del.icio.us widget
 excerpt: ""
 wordpress_id: 26
 wordpress_url: http://davidlynch.org/blog/?p=26
+disqus_threadid: 445428477
 date: 2008-03-20 11:21:45 -05:00
 tags: 
 - programming

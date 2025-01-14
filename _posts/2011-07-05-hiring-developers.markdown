@@ -4,6 +4,7 @@ title: Hiring developers
 excerpt: ""
 wordpress_id: 133
 wordpress_url: http://davidlynch.org/blog/?p=133
+disqus_threadid: 445428652
 date: 2011-07-05 23:53:31 -05:00
 tags: 
 - programming

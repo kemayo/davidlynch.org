@@ -4,6 +4,7 @@ title: FicWhat?
 excerpt: ""
 wordpress_id: 11
 wordpress_url: http://davidlynch.org/blog/2007/12/ficwhat/
+disqus_threadid: 445428398
 date: 2007-12-21 16:11:38 -06:00
 tags: 
 - programming

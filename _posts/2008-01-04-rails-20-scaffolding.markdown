@@ -4,6 +4,7 @@ title: Rails 2.0 Scaffolding
 excerpt: ""
 wordpress_id: 14
 wordpress_url: http://davidlynch.org/blog/2008/01/rails-20-scaffolding/
+disqus_threadid: 445428406
 date: 2008-01-04 08:00:01 -06:00
 tags: 
 - programming

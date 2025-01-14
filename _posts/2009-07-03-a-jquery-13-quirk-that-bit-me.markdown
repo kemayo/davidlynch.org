@@ -4,6 +4,7 @@ title: A jQuery 1.3 quirk that bit me
 excerpt: ""
 wordpress_id: 84
 wordpress_url: http://davidlynch.org/blog/?p=84
+disqus_threadid: 445428555
 date: 2009-07-03 14:58:04 -05:00
 tags: 
 - programming

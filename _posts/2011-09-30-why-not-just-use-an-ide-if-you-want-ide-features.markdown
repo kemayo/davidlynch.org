@@ -4,6 +4,7 @@ title: Why not just use an IDE if you want IDE features?
 excerpt: ""
 wordpress_id: 147
 wordpress_url: http://davidlynch.org/blog/?p=147
+disqus_threadid: 445428698
 date: 2011-09-30 22:34:35 -05:00
 tags: 
 - programming

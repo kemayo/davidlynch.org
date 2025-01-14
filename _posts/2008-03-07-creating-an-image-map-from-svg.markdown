@@ -4,6 +4,7 @@ title: Creating an image map from SVG
 excerpt: ""
 wordpress_id: 24
 wordpress_url: http://davidlynch.org/blog/2008/03/creating-an-image-map-from-svg/
+disqus_threadid: 445428459
 date: 2008-03-07 10:55:43 -06:00
 tags: 
 - programming

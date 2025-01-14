@@ -4,6 +4,7 @@ title: "maphilight: image map mouseover highlighting"
 excerpt: ""
 wordpress_id: 23
 wordpress_url: http://davidlynch.org/blog/2008/03/maphilight-image-map-mouseover-highlighting/
+disqus_threadid: 445428450
 date: 2008-03-05 20:30:06 -06:00
 tags: 
 - programming

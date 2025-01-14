@@ -4,6 +4,7 @@ title: How to generate PDFs from XML using Apache FOP in Ruby on Rails
 excerpt: ""
 wordpress_id: 16
 wordpress_url: http://davidlynch.org/blog/2008/01/how-to-generate-pdfs-from-xml-using-apache-fop-in-ruby-on-rails/
+disqus_threadid: 445428419
 date: 2008-01-09 14:50:07 -06:00
 tags: 
 - programming

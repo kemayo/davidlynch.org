@@ -3,6 +3,7 @@ layout: post
 title: "Raking Jekyll"
 date: 2011-10-27 01:11:43 -0500
 published: true
+disqus_threadid: 454722873
 tags:
 - programming
 - jekyll

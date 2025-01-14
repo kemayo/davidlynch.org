@@ -2,6 +2,7 @@
 layout: post
 title: "Switching from Android to iPhone"
 date: 2012-09-22 01:26:30 -0500
+disqus_threadid: 854242112
 tags:
 - iphone
 - ios
