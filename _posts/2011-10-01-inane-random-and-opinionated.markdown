@@ -3,7 +3,7 @@ layout: post
 title: Inane, random, and opinionated
 excerpt: ""
 wordpress_id: 144
-wordpress_url: http://davidlynch.org/blog/?p=144
+wordpress_url: https://davidlynch..org/blog/?p=144
 date: 2011-10-01 04:30:37 -05:00
 tags: 
 - programming

@@ -3,7 +3,7 @@ layout: post
 title: "Ubuntu: sharing music with iTunes"
 excerpt: ""
 wordpress_id: 38
-wordpress_url: http://davidlynch.org/blog/?p=38
+wordpress_url: https://davidlynch..org/blog/?p=38
 date: 2008-05-06 23:05:32 -05:00
 tags: 
 - personal

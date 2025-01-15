@@ -3,7 +3,7 @@ layout: post
 title: Change your surroundings
 excerpt: ""
 wordpress_id: 101
-wordpress_url: http://davidlynch.org/blog/?p=101
+wordpress_url: https://davidlynch..org/blog/?p=101
 date: 2010-06-17 23:37:01 -05:00
 tags: 
 - programming

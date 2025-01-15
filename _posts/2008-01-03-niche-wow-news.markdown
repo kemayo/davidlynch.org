@@ -3,7 +3,7 @@ layout: post
 title: Niche WoW news
 excerpt: ""
 wordpress_id: 13
-wordpress_url: http://davidlynch.org/blog/2008/01/niche-wow-news/
+wordpress_url: https://davidlynch..org/blog/2008/01/niche-wow-news/
 date: 2008-01-03 09:14:12 -06:00
 tags: 
 - programming

@@ -3,7 +3,7 @@ layout: post
 title: Simplecomic
 excerpt: ""
 wordpress_id: 96
-wordpress_url: http://davidlynch.org/blog/?p=96
+wordpress_url: https://davidlynch..org/blog/?p=96
 date: 2010-05-22 20:38:32 -05:00
 tags: 
 - programming

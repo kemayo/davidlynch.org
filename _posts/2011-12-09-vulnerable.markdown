@@ -28,6 +28,6 @@ The lesson I'm taking from this is: security is hard to enforce when themes that
 [timthumb]: http://blog.sucuri.net/2011/08/timthumb-php-security-vulnerability-just-the-tip-of-the-iceberg.html
 [scan]: http://www.planetmike.com/2011/09/09/timthumb-php-vulnerability-scans/
 [extent]: http://blog.sucuri.net/2011/10/timthumb-php-mass-infection-aftermath-part-i.html
-[jekyll]: http://davidlynch.org/blog/2011/10/jekyll/
+[jekyll]: {% post_url 2011-10-18-jekyll %}
 [console-gist]: https://gist.github.com/1450516
 [console-screen]: http://fc03.deviantart.net/fs71/f/2011/342/8/a/haxxor_by_kemayo-d4iki5x.png

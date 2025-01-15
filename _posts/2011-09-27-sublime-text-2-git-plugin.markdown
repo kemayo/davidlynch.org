@@ -3,7 +3,7 @@ layout: post
 title: Sublime Text 2 git plugin
 excerpt: ""
 wordpress_id: 142
-wordpress_url: http://davidlynch.org/blog/?p=142
+wordpress_url: https://davidlynch..org/blog/?p=142
 disqus_threadid: 445428676
 date: 2011-09-27 22:34:06 -05:00
 tags: 

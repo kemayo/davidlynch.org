@@ -3,7 +3,7 @@ layout: post
 title: To replace PHP you need
 excerpt: ""
 wordpress_id: 161
-wordpress_url: http://davidlynch.org/blog/?p=161
+wordpress_url: https://davidlynch..org/blog/?p=161
 date: 2011-10-05 16:20:17 -05:00
 tags: 
 - programming

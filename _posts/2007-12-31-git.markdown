@@ -3,7 +3,7 @@ layout: post
 title: git
 excerpt: ""
 wordpress_id: 12
-wordpress_url: http://davidlynch.org/blog/2007/12/git/
+wordpress_url: https://davidlynch..org/blog/2007/12/git/
 date: 2007-12-31 15:36:54 -06:00
 tags: 
 - programming

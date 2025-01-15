@@ -3,7 +3,7 @@ layout: post
 title: Engagingly quirky
 excerpt: ""
 wordpress_id: 50
-wordpress_url: http://davidlynch.org/blog/2009/02/engagingly-quirky/
+wordpress_url: https://davidlynch..org/blog/2009/02/engagingly-quirky/
 date: 2009-02-12 00:24:29 -06:00
 tags: 
 - personal

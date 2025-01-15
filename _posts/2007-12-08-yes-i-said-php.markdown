@@ -3,7 +3,7 @@ layout: post
 title: Yes, I said PHP
 excerpt: ""
 wordpress_id: 6
-wordpress_url: http://davidlynch.org/blog/2007/12/yes-i-said-php/
+wordpress_url: https://davidlynch..org/blog/2007/12/yes-i-said-php/
 date: 2007-12-08 20:48:06 -06:00
 tags: 
 - programming

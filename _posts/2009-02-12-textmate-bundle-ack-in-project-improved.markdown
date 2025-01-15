@@ -3,7 +3,7 @@ layout: post
 title: "TextMate bundle: Ack in Project (improved)"
 excerpt: ""
 wordpress_id: 63
-wordpress_url: http://davidlynch.org/blog/?p=63
+wordpress_url: https://davidlynch..org/blog/?p=63
 disqus_threadid: 445428548
 date: 2009-02-12 21:54:46 -06:00
 tags: 

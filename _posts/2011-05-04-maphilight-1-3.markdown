@@ -3,7 +3,7 @@ layout: post
 title: Maphilight 1.3
 excerpt: ""
 wordpress_id: 112
-wordpress_url: http://davidlynch.org/blog/?p=112
+wordpress_url: https://davidlynch..org/blog/?p=112
 disqus_threadid: 445428646
 date: 2011-05-04 21:08:41 -05:00
 tags: 

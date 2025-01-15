@@ -3,7 +3,7 @@ layout: post
 title: David Lynch has a blog
 excerpt: ""
 wordpress_id: 4
-wordpress_url: http://davidlynch.org/blog/2007/12/david-lynch-has-a-blog/
+wordpress_url: https://davidlynch..org/blog/2007/12/david-lynch-has-a-blog/
 date: 2007-12-07 13:35:30 -06:00
 tags: 
 - wow

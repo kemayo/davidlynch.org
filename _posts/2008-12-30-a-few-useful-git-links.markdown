@@ -3,7 +3,7 @@ layout: post
 title: A few useful git links
 excerpt: ""
 wordpress_id: 48
-wordpress_url: http://davidlynch.org/blog/?p=48
+wordpress_url: https://davidlynch..org/blog/?p=48
 date: 2008-12-30 11:46:30 -06:00
 tags: 
 - programming

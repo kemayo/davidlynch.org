@@ -3,7 +3,7 @@ layout: post
 title: Detecting failure
 excerpt: ""
 wordpress_id: 58
-wordpress_url: http://davidlynch.org/blog/?p=58
+wordpress_url: https://davidlynch..org/blog/?p=58
 date: 2009-02-12 01:11:01 -06:00
 tags: 
 - programming

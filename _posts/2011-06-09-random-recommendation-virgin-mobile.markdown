@@ -3,7 +3,7 @@ layout: post
 title: "Random recommendation: Virgin Mobile"
 excerpt: ""
 wordpress_id: 120
-wordpress_url: http://davidlynch.org/blog/?p=120
+wordpress_url: https://davidlynch..org/blog/?p=120
 date: 2011-06-09 15:43:06 -05:00
 tags: 
 - personal

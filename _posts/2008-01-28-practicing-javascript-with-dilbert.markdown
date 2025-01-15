@@ -3,7 +3,7 @@ layout: post
 title: Practicing JavaScript with Dilbert
 excerpt: ""
 wordpress_id: 20
-wordpress_url: http://davidlynch.org/blog/2008/01/practicing-javascript-with-dilbert/
+wordpress_url: https://davidlynch..org/blog/2008/01/practicing-javascript-with-dilbert/
 date: 2008-01-28 08:53:16 -06:00
 tags: 
 - programming
@@ -18,7 +18,7 @@ Naturally I thought to myself "aha, there must be an XML data feed somewhere in 
 
 I then seized on this as a learning opportunity, and wrote a much better viewer, in boring old JavaScript. Why is it better?  Because it doesn't require Flash, and is not limited to one panel at a time, that's why.
 
-[My Dilbert viewer, can you view it?](http://toys.davidlynch.org/dilbert/)
+[My Dilbert viewer, can you view it?](https://toys.davidlynch.org/dilbert/)
 
 Caveats:
 1. It's perfect in Firefox3 and Safari. Sundays aren't *quite* right in IE7; the first and last buttons are missing in Opera. All else is untested.

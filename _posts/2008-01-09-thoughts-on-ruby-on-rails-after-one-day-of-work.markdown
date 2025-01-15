@@ -3,14 +3,14 @@ layout: post
 title: Thoughts on Ruby on Rails after one day of work
 excerpt: ""
 wordpress_id: 15
-wordpress_url: http://davidlynch.org/blog/2008/01/thoughts-on-ruby-on-rails-after-one-day-of-work/
+wordpress_url: https://davidlynch..org/blog/2008/01/thoughts-on-ruby-on-rails-after-one-day-of-work/
 date: 2008-01-09 14:30:01 -06:00
 tags: 
 - programming
 - ruby
 - rails
 ---
-I started looking at [Rails](http://www.rubyonrails.org) (leading to [my talking about scaffolding](http://davidlynch.org/blog/2008/01/rails-20-scaffolding/)) because I wanted to try writing my next work-project in it.
+I started looking at [Rails](http://www.rubyonrails.org) (leading to [my talking about scaffolding](/blog/2008/01/rails-20-scaffolding/)) because I wanted to try writing my next work-project in it.
 
 I don't know about others... but I hate learning a language/framework in isolation from a project. Writing an insipid tutorial project that I don't care about doesn't *involve* me, and so I don't learn as well. Also, the applications written alongside tutorials tend to be very carefully chosen to hit all the good parts of a framework, while ignoring the rough spots. Thus I've historically viewed "prototyping my next project" as a great time to pick up something new.
 

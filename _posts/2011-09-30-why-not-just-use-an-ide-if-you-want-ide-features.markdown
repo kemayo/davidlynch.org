@@ -3,7 +3,7 @@ layout: post
 title: Why not just use an IDE if you want IDE features?
 excerpt: ""
 wordpress_id: 147
-wordpress_url: http://davidlynch.org/blog/?p=147
+wordpress_url: https://davidlynch..org/blog/?p=147
 disqus_threadid: 445428698
 date: 2011-09-30 22:34:35 -05:00
 tags: 
@@ -11,7 +11,7 @@ tags:
 - editor
 - ide
 ---
-After I [posted](http://davidlynch.org/blog/2011/09/sublime-text-2-git-plugin/) about my [Sublime Text 2 git plugin](https://github.com/kemayo/sublime-text-2-git/wiki) I got one response which I thought was worth responding to.
+After I [posted]({% post_url 2011-09-27-sublime-text-2-git-plugin %}) about my [Sublime Text 2 git plugin](https://github.com/kemayo/sublime-text-2-git/wiki) I got one response which I thought was worth responding to.
 
 <blockquote cite="http://www.reddit.com/r/programming/comments/ktmh5/a_git_plugin_for_sublime_text_2/c2nbsth">That looks helpful, but I often wonder why not just use an IDE if you want IDE features.</blockquote>
 
@@ -25,4 +25,4 @@ A lightweight-but-extensible editor (e.g. Sublime, TextMate, vi, and so on) tend
 
 Neither is necessarily better, but they do tend to appeal to different types of developer. Web developers, needing to work with a number of different file types, and not generally having complicated build system requirements, gravitate towards the lightweight editors.
 
-<b>UPDATE:</b> To be clear, I'm not saying either is better. It's a matter of personal choice and situation. As someone who mostly does web development in dynamic languages, I like using a fairly lightweight editing environment. If I wrote in Java I'm sure I'd be singing the praises of IntelliJ/Eclipse/whatever, because I understand that Java is almost impossible to write well *without* an IDE.
+**UPDATE:** To be clear, I'm not saying either is better. It's a matter of personal choice and situation. As someone who mostly does web development in dynamic languages, I like using a fairly lightweight editing environment. If I wrote in Java I'm sure I'd be singing the praises of IntelliJ/Eclipse/whatever, because I understand that Java is almost impossible to write well *without* an IDE.

@@ -3,7 +3,7 @@ layout: post
 title: svn synonym
 excerpt: ""
 wordpress_id: 9
-wordpress_url: http://davidlynch.org/blog/2007/12/svn-synonym/
+wordpress_url: https://davidlynch..org/blog/2007/12/svn-synonym/
 disqus_threadid: 445428389
 date: 2007-12-11 09:07:50 -06:00
 tags: 

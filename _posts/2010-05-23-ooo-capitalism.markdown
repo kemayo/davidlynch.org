@@ -3,7 +3,7 @@ layout: post
 title: Ooo capitalism
 excerpt: ""
 wordpress_id: 99
-wordpress_url: http://davidlynch.org/blog/2010/05/ooo-capitalism/
+wordpress_url: https://davidlynch..org/blog/2010/05/ooo-capitalism/
 disqus_threadid: 445428605
 date: 2010-05-23 17:25:10 -05:00
 tags: 

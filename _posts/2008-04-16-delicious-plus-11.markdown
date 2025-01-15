@@ -3,7 +3,7 @@ layout: post
 title: del.icio.us plus 1.1
 excerpt: ""
 wordpress_id: 36
-wordpress_url: http://davidlynch.org/blog/?p=36
+wordpress_url: https://davidlynch..org/blog/?p=36
 date: 2008-04-16 13:18:51 -05:00
 tags: 
 - programming

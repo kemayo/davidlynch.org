@@ -3,7 +3,7 @@ layout: post
 title: Why I can't play Dungeon Runners
 excerpt: ""
 wordpress_id: 17
-wordpress_url: http://davidlynch.org/blog/2008/01/why-i-cant-play-dungeon-runners/
+wordpress_url: https://davidlynch..org/blog/2008/01/why-i-cant-play-dungeon-runners/
 date: 2008-01-16 09:28:11 -06:00
 tags: 
 - personal

@@ -3,7 +3,7 @@ layout: post
 title: A shadow is upon us
 excerpt: ""
 wordpress_id: 137
-wordpress_url: http://davidlynch.org/blog/?p=137
+wordpress_url: https://davidlynch..org/blog/?p=137
 date: 2011-09-02 19:16:52 -05:00
 tags: 
 - programming
@@ -94,6 +94,6 @@ I went ahead and added some options for whether the shadow was cast inside or ou
 
 I still didn't add it to non-canvas. Largely because now that IE has finally given in and implemented canvas I view that as being a dead branch. Needs to keep working, and any major changes have to be ported over... but minor display differences are somewhat acceptable. Also, I don't have access to IE right now, since I'm away from home. If I ever have reason to look into shadows in VML I'm sure I'll add it in then, for the heck of it.
 
-You can [see all this in action on the demo page](http://davidlynch.org/js/maphilight/docs/demo_features.html) if you're interested.
+You can [see all this in action on the demo page](/projects/maphilight/docs/demo_features.html) if you're interested.
 
 And that's how community involvement improves things. :D

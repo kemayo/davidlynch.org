@@ -65,7 +65,7 @@ iPhone:
 
 I'd say that I'm happy with my iPhone. Next time I want to get a new device I'll still consider an Android. I gather that a Nexus is the way to get iPhone-equivalent upgrade support, so I'll certainly look at that. Still, unless something on Android looks like [more than just a quantum leap ahead][quantum], I'd imagine I'll be sticking with the iPhone.
 
-[virgin]: http://davidlynch.org/blog/2011/06/random-recommendation-virgin-mobile/
+[virgin]: {% post_url 2011-06-09-random-recommendation-virgin-mobile %}
 [iho]: https://github.com/inferiorhumanorgans/android_device_lge_thunderc_common/wiki/Binary
 [kellie]: http://kellielynch.org
 [quantum]: http://www.smbc-comics.com/index.php?db=comics&id=2628

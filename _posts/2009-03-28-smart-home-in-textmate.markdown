@@ -3,7 +3,7 @@ layout: post
 title: Smart Home in TextMate
 excerpt: ""
 wordpress_id: 74
-wordpress_url: http://davidlynch.org/blog/?p=74
+wordpress_url: https://davidlynch..org/blog/?p=74
 date: 2009-03-28 01:59:41 -05:00
 tags: 
 - programming

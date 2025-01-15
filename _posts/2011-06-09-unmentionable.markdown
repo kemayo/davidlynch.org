@@ -3,7 +3,7 @@ layout: post
 title: Unmentionable
 excerpt: ""
 wordpress_id: 124
-wordpress_url: http://davidlynch.org/blog/?p=124
+wordpress_url: https://davidlynch..org/blog/?p=124
 date: 2011-06-09 15:11:15 -05:00
 tags: 
 - personal

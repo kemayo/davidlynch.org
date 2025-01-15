@@ -3,7 +3,7 @@ layout: post
 title: Strange incompleteness
 excerpt: ""
 wordpress_id: 35
-wordpress_url: http://davidlynch.org/blog/?p=35
+wordpress_url: https://davidlynch..org/blog/?p=35
 date: 2008-04-16 09:51:27 -05:00
 tags: 
 - programming

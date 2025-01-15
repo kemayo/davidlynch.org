@@ -3,7 +3,7 @@ layout: post
 title: AckMate
 excerpt: ""
 wordpress_id: 92
-wordpress_url: http://davidlynch.org/blog/2010/05/ackmate/
+wordpress_url: https://davidlynch..org/blog/2010/05/ackmate/
 date: 2010-05-22 00:10:59 -05:00
 tags: 
 - programming
@@ -11,6 +11,6 @@ tags:
 - ack
 - ackmate
 ---
-In the event that anyone was using my TextMate [Ack In Project fork](http://davidlynch.org/blog/2009/02/textmate-bundle-ack-in-project-improved/), protocool released a successor to Ack In Project called [AckMate](http://github.com/protocool/AckMate).
+In the event that anyone was using my TextMate [Ack In Project fork]({% post_url 2009-02-12-textmate-bundle-ack-in-project-improved %}), protocool released a successor to Ack In Project called [AckMate](http://github.com/protocool/AckMate).
 
 It's better. Get it instead.

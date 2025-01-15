@@ -3,7 +3,7 @@ layout: post
 title: Three gigabytes free...ish
 excerpt: ""
 wordpress_id: 19
-wordpress_url: http://davidlynch.org/blog/2008/01/three-gigabytes-freeish/
+wordpress_url: https://davidlynch..org/blog/2008/01/three-gigabytes-freeish/
 date: 2008-01-22 15:12:54 -06:00
 tags: 
 - personal

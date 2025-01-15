@@ -3,7 +3,7 @@ layout: post
 title: Yahoo! Pipes is awesome
 excerpt: ""
 wordpress_id: 8
-wordpress_url: http://davidlynch.org/blog/2007/12/yahoo-pipes-is-awesome/
+wordpress_url: https://davidlynch..org/blog/2007/12/yahoo-pipes-is-awesome/
 date: 2007-12-10 13:55:21 -06:00
 tags: 
 - blogroll

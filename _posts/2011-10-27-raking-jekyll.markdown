@@ -32,5 +32,5 @@ Since I rarely know the current date without having to look it up, that certainl
 Here's [my Rakefile][rakefile], if you want to use anything from it. It's probably not properly idiomatic Ruby, but it does at least work.
 
 [rakefile]: https://github.com/kemayo/davidlynch.org/blob/master/Rakefile
-[switching]: http://davidlynch.org/blog/2011/10/jekyll/
+[switching]: {% post_url 2011-10-18-jekyll %}
 [makefile]: http://locklessinc.com/articles/makefile_tricks/ "this is sort of cheating as a bad example"

@@ -3,7 +3,7 @@ layout: post
 title: Disadvantages to a Hollywood office
 excerpt: ""
 wordpress_id: 37
-wordpress_url: http://davidlynch.org/blog/?p=37
+wordpress_url: https://davidlynch..org/blog/?p=37
 date: 2008-05-06 22:43:26 -05:00
 tags: 
 - personal

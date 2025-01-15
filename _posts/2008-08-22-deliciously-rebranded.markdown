@@ -3,7 +3,7 @@ layout: post
 title: Deliciously rebranded
 excerpt: ""
 wordpress_id: 41
-wordpress_url: http://davidlynch.org/blog/?p=41
+wordpress_url: https://davidlynch..org/blog/?p=41
 disqus_threadid: 445428525
 date: 2008-08-22 20:12:58 -05:00
 tags: 

@@ -3,7 +3,7 @@ layout: post
 title: maphilight 1.2
 excerpt: ""
 wordpress_id: 87
-wordpress_url: http://davidlynch.org/blog/?p=87
+wordpress_url: https://davidlynch..org/blog/?p=87
 disqus_threadid: 445428572
 date: 2010-05-22 00:05:28 -05:00
 tags: 
@@ -22,6 +22,6 @@ There's not much in the way of changes:
 * IE8 works now
 * New "neverOn" option for use with metadata by Zach Dennis, which stops individual areas from ever being hilighted
 * Handles being called on the same area twice differently; now rebuilds the hilighted regions
-* ...and I added [an example](http://davidlynch.org/js/maphilight/docs/demo_simple.html) of triggering the hilight from another element, since it's one of the most commonly asked questions
+* ...and I added [an example](/projects/maphilight/docs/demo_simple.html) of triggering the hilight from another element, since it's one of the most commonly asked questions
 
 Hopefully I'll be able to post here a bit more now that I have some of that guilt for not updating off my shoulders. :P

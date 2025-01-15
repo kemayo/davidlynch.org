@@ -3,7 +3,7 @@ layout: post
 title: Signs of adulthood
 excerpt: ""
 wordpress_id: 122
-wordpress_url: http://davidlynch.org/blog/?p=122
+wordpress_url: https://davidlynch..org/blog/?p=122
 date: 2011-06-09 15:16:31 -05:00
 tags: 
 - personal

@@ -3,7 +3,7 @@ layout: post
 title: NautilusSVN
 excerpt: ""
 wordpress_id: 77
-wordpress_url: http://davidlynch.org/blog/2009/04/nautilussvn/
+wordpress_url: https://davidlynch..org/blog/2009/04/nautilussvn/
 date: 2009-04-04 17:58:47 -05:00
 tags: 
 - programming

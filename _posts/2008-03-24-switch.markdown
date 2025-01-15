@@ -3,7 +3,7 @@ layout: post
 title: Switch
 excerpt: ""
 wordpress_id: 30
-wordpress_url: http://davidlynch.org/blog/?p=30
+wordpress_url: https://davidlynch..org/blog/?p=30
 date: 2008-03-24 12:32:19 -05:00
 tags: 
 - personal

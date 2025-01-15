@@ -3,7 +3,7 @@ layout: post
 title: Python whitespace doesn't matter
 excerpt: ""
 wordpress_id: 10
-wordpress_url: http://davidlynch.org/blog/2007/12/python-whitespace-doesnt-matter/
+wordpress_url: https://davidlynch..org/blog/2007/12/python-whitespace-doesnt-matter/
 disqus_threadid: 445428388
 date: 2007-12-14 13:50:40 -06:00
 tags: 

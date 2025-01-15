@@ -3,7 +3,7 @@ layout: post
 title: Fixing sortForce in jQuery's tablesorter
 excerpt: ""
 wordpress_id: 21
-wordpress_url: http://davidlynch.org/blog/2008/02/fixing-sortforce-in-jquerys-tablesorter/
+wordpress_url: https://davidlynch..org/blog/2008/02/fixing-sortforce-in-jquerys-tablesorter/
 disqus_threadid: 445428442
 date: 2008-02-05 14:49:47 -06:00
 tags: 
@@ -19,7 +19,7 @@ It has an option, sortForce, which its documentation says you can use to "add an
 
 The problem is that it actually *prepends* the sort to the user's selection, which means that the user is restricted to sorting within the forced sort. (This is also a potentially useful tool; it's just not what the documentation indicates.)
 
-So I wrote up [a patch](http://davidlynch.org/js/jquery.tablesorter.sortForce_optimal.patch jQuery Tablesorter sortForce patch) that fixes this, along with a few other niggling issues with sortForce. (Its interaction with the user sorting by multiple columns, and it locking the forced-sort column in one sort direction.)  To preserve backwards-compatibility I added a new option, sortAppend, to provide the documented behavior.
+So I wrote up [a patch](/js/jquery.tablesorter.sortForce_optimal.patch jQuery Tablesorter sortForce patch) that fixes this, along with a few other niggling issues with sortForce. (Its interaction with the user sorting by multiple columns, and it locking the forced-sort column in one sort direction.)  To preserve backwards-compatibility I added a new option, sortAppend, to provide the documented behavior.
 
 I also submitted the patch to the maintainer, so hopefully it can get incorporated.
 
