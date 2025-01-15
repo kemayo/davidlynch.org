@@ -3,8 +3,9 @@ layout: default
 title: "LinkCleaner"
 subtitle: "cleans links"
 ---
-![Logo](LinkCleaner-256.png)
-![menu screenshot](screenshot-menu.png)
+![Logo](LinkCleaner-256.png){: .aligncenter}
+
+![menu screenshot](screenshot-menu.png){: .alignright}
 
 LinkCleaner soothes my deep and often-unsatisfied need for cleanliness and a lack of unnecessary junk, particularly in things I want to share with others.
 
