@@ -14,7 +14,13 @@
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:type" content="{% if page.type != null %}{{ page.type }}{% elsif page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:title" content="{{ page.title | default: site.sitename }}">
-<meta property="og:description" content="{{ page.description | default: page.excerpt | default: site.description }}">
+<meta property="og:description" content="{%- if page.description -%}
+    {{- page.description -}}
+{%- elsif page.layout == 'post' -%}
+    {{ page.content | markdownify | strip_html | truncatewords: 50 }}
+{%- else -%}
+    {{- site.description -}}
+{%- endif -%}">
 <meta property="og:image" content="{% if page.image != null %}{{ page.image }}{% else %}/images/me.jpeg{% endif %}">
 
 <!-- Google tag (gtag.js) -->
