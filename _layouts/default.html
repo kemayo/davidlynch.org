@@ -21,7 +21,7 @@
 {%- else -%}
     {{- site.description -}}
 {%- endif -%}">
-<meta property="og:image" content="{% if page.image != null %}{{ page.image }}{% else %}/images/me.jpeg{% endif %}">
+<meta property="og:image" content="{% if page.image != null %}{{ page.image | absolute_url }}{% else %}{{'/images/me.jpeg' | absolute_url }}{% endif %}">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1R5XPJYWH"></script>

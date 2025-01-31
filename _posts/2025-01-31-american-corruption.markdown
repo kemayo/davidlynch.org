@@ -3,6 +3,7 @@ layout: post
 title: "American Corruption"
 date: 2025-01-31 13:09:37 -0600
 published: true
+image: /blog/images/2025/01/corruption.jpeg
 tags:
 - politics
 - corruption
