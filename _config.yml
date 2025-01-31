@@ -9,6 +9,7 @@ paginate_path: "/blog/page/:num"
 
 sitename: "David Lynch"
 subtitle: "is not a director"
+description: "The personal website of David Lynch, a software developer"
 
 author: "David Lynch"
 email: "kemayo@gmail.com"
