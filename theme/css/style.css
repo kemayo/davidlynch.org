@@ -4,7 +4,7 @@
 }
 
 body {
-	font-family:Verdana, Geneva, sans-serif;
+	font-family: Helvetica Now Variable,Helvetica Neue,Helvetica,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 a, a:link {
 	color: #28425e;
@@ -14,7 +14,7 @@ a:hover, a:active {
 	color:#e15119;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: arial, helvetica, sans-serif;
+/*	font-family: arial, helvetica, sans-serif;*/
 	font-weight:normal;
 	color:#28425e;
 }
@@ -23,7 +23,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 p {
 	margin:1em 0;
-	line-height:1.4;
+	font-size:1.25rem;
+	line-height:1.8;
 }
 
 ul, ol {
@@ -65,7 +66,7 @@ nav {
 	text-align:center;
 	margin-bottom:2em;
 }
-#branding h1 {
+#branding h1, body.post .entry-header .entry-title {
 	font-size:2.7em;
 	font-weight:bold;
 	margin:1em 0 0;
@@ -162,6 +163,16 @@ nav {
 }
 .post footer .entry-comments {
 	display:block;
+}
+body.post #branding > hgroup {
+	display: none;
+}
+body.post .entry-header .entry-title {
+	margin: 0;
+}
+body.post .entry-header .entry-meta {
+	text-align: center;
+	font-size: 1.2rem;
 }
 
 /* Widgets! */
