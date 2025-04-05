@@ -36,6 +36,11 @@ dl dd {
 	padding-bottom:1ex;
 }
 
+blockquote {
+	border-left: 3px solid #cbd3db;
+	padding-left: 1em;
+}
+
 /* Text meant only for screen readers */
 .screen-reader-text,
 .assistive-text {
