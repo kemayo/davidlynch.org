@@ -16,6 +16,16 @@ email: "kemayo@gmail.com"
 
 tag_dir: "blog/tag"
 
+disqus_shortname: "dpl"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+
 plugins:
   - jekyll-tagging-related_posts
   - jekyll-sitemap

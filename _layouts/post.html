@@ -10,7 +10,9 @@ subtitle: "has a blog"
 
 {% include post_navigation.html %}
 
-{% include comments.html %}
+{% if site.disqus_shortname and post.comments %}
+    {%- include comments.html -%}
+{% endif %}
 
 </div><!-- content -->
 </div><!-- primary -->

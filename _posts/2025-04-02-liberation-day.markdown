@@ -3,6 +3,7 @@ layout: post
 title: "\"Liberation Day\""
 date: 2025-04-02 19:24:16 -0500
 published: true
+comments: false
 tags:
 - politics
 ---
