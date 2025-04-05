@@ -2,9 +2,9 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_config = function () {
-            this.page.url = '{{ post.url | absolute_url }}';
-            this.page.identifier = '{{ post.wordpress_id | default: post.url }}';
-            this.page.title = "{{ post.title }}";
+            this.page.url = {{ post.url | absolute_url | jsonify }};
+            this.page.identifier = {{ post.wordpress_id | default: post.url | jsonify }};
+            this.page.title = {{ post.title | jsonify }};
         };
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
