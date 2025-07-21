@@ -1,3 +1,4 @@
 _site
 _cache
 .gist-cache
+.DS_Store
