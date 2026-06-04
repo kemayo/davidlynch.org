@@ -23,6 +23,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 p {
 	margin:1em 0;
+}
+p, li {
 	font-size:1.25rem;
 	line-height:1.8;
 }
@@ -105,6 +107,7 @@ nav {
 	display:inline-block;
 	margin:0 1ex;
 	vertical-align:top;
+	line-height: 1;
 }
 #access .menu li.current_page_item a {
 	font-weight:bold;
