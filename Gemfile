@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
+gem "jekyll", "~> 4.4"
 
 gem "jekyll-tagging-related_posts", "~> 1.3"
 gem "jekyll-sitemap", "~> 1.4"
