@@ -32,7 +32,7 @@ desc 'Build and deploy'
 task :deploy => :build do
   user = 'kemayo'
   host = 'davidlynch.org'
-  directory = '~/web/davidlynch.org/public_html/'
+  directory = '/var/www/davidlynch.org/'
   sh "rsync -rtOzh --progress --delete --exclude=/.well-known _site/ #{user}@#{host}:#{directory}"
 end
 
