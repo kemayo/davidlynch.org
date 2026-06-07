@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Respect"
+date: 2026-06-07 10:22:40 -0500
+published: true
+tags:
+- personal
+- opinion
+---
+What does it mean to have respect for someone? To demand respect? To object that someone is not being respectful towards you?
+
+Unfortunately, this is [another case]({% post_url 2026-01-21-strength %}) of multiple meanings.
+
+Respect can be:
+
+1. Mutual. Treating others with dignity, trying to understand their viewpoint even when you disagree.
+1. Earned. People see how you act, and decide how to treat you in response.
+1. Hierarchical. Obedience, deferring to someone because of their position.
+
+For the most part in your life, you're dealing with mutual and earned respect. You treat your spouse, your friends, and random strangers with respect. If you "demand respect" you're asking that they treat you how they'd like to be treated. You tell them what you want, and if they think it's the right thing to do then they'll do it. You "earn" respect by acting and showing that you can be relied upon.
+
+It's when power comes into the situation that the meaning of "respect" shifts. It's now about obedience and deference. You have to obey your boss, or a police officer, or your parent, regardless of whether you think they're in the right. If you disagree with them you have to weigh whether they'll even allow you to express that, or whether there will be *consequences*.
+
+> "Evil begins when you begin to treat people as things"
+>
+> &mdash; <cite>Terry Pratchett, I Shall Wear Midnight</cite>
+
+Putting my thumb on the scale here, I think hierarchical respect is the worst form of respect.
+
+This isn't to say that hierarchical respect is inherently bad. I'm not an anarchist; hierarchies exist for a reason, and in the best case they result in the ability to efficiently accomplish large scale goals for the overall good of everyone involved. You do what the person above you says because you trust that they know more than you, and that results in rapidly accomplishing things without a need to persuade everyone of the merits of, say, reorganizing your division to launch a new product line.
+
+When done right, the hierarchy operates with mutual respect between leaders and those at the bottom, and earns respect from the lower ranks by proving that it has their interests in mind and can succeed at its goals. You aren't using the implicit coercion of the hierarchy, because you (or the position you're in) have earned respect.
+
+The failure mode comes when you rely on hierarchy without bothering with mutual or earned respect to back it up. It's really easy to sacrifice the accumulated hierarchical trust: made a bad choice, dismiss feedback, force underlings to push it through or lose their jobs, and deflect blame once it all goes wrong.
+
+Strip all the pretty varnish away and what's left is the backstop of hierarchical authority: "do what I say or I will harm you". Depending on the form of authority the harm varies, from minor monetary consequences, to losing your chance to ascend the hierarchy yourself, to losing your job, all the way to losing your life. It's coercion nonetheless.
+
+It's a one-way door, because once someone has forced you to obey because of their position, you're going to stop considering whether they're *right* in the future. It's now very hard for them to win you over through competence and good deeds, because the underlying truth of power that they're willing to resort to has been made clear, *particularly* if they were shown to be wrong about the thing they wanted you to do. All future orders will carry the implicit threat.
+
+Note that this is bad for those at the top of the hierarchy as well. They get obedience, but they lose out on honest advice. Since nobody can be right all the time this results in mistakes, which are then amplified by nobody feeling they're in a position to intervene.
+
+You've probably seen someone high up in power make a decision that you think is obviously not going to work. Maybe they start a war, maybe they direct a company's resources into immersive VR, maybe they thought everything would be on the blockchain, whatever. It fails, and you were right. Sometimes this is just misaligned incentives, and they're doing it because they don't care about whether it works but instead because they personally will be rewarded for it. I think it's more common for it to be hierarchical insulation, though. If it's obvious to you as a lowly employee that something is a bad idea, that knowledge has to travel up through 5 layers of "respectful" feedback to reach your CEO. It only takes one of those layers having sabotaged mutual respect to stop this knowledge going any further.
+
+So remember, if your boss says you need to "be more respectful", they *might* mean "stop swearing at people", but it's more likely that they mean "stop pushing back against things you think are a bad idea, and especially stop saying you told me so".
+
+What to do about this? Being aware of the different types of respect helps. Don't get caught up in the trap of the hierarchy, and when you find yourself holding power over others don't resort to it. You might not ever be a CEO or a President, but you're relatively likely to be an adult in a child's life at some point, and modeling mutual respect within a hierarchy in your own life can set people on the right track.
